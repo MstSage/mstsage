@@ -1,0 +1,31 @@
+/**
+ * Menus
+ */
+.mstsage-menu {
+    background-clip: padding-box;
+    background-color: #252627;
+    border-bottom: 2em solid transparent;
+    cursor: default;
+    display: block;
+    max-height: 500px;
+    padding: 10px 0 60px 0;
+    position: absolute;
+}
+
+.mstsage-menu::before {
+    content: ' ';
+    display: block;
+}
+
+.mstsage-menu::before,
+.mstsage-border-dart {
+    border-color: transparent transparent #252627 transparent;
+    border-style: solid;
+    border-width: 0 7px 7px 7px;
+    height: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 0;
+    z-index: 2;
+}

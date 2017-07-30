@@ -1,0 +1,137 @@
+/* Article bottom version */
+#shareBox {
+    border:0px solid #ddd;
+    width:475px;
+    line-height:18px;
+    margin:20px 0 0 175px;
+    position:relative;
+    color:#585858;
+}
+#shareBox .hdr {
+    text-transform:uppercase;
+    padding-bottom:4px
+}
+#shareBox .par {
+    padding-bottom:5px
+}
+.shareBoxFb {
+    float:left;
+    margin-right:15px;
+    margin-left:5px
+}
+.shareBoxFollow { 
+    float:left;
+    width:205px;
+}
+.shareBoxButton {
+    background:url("../../../../../../../media/mstsage/imgs/btn_twitter_email.png");
+    height:26px;
+    width:160px;
+    margin-bottom:15px;
+    display:block;
+}
+.shareBoxButton.signup {
+    background-position:0px -50px;
+}
+.shareBoxButton.twitter {
+    background-position:0px 0px;
+}
+
+/* Right rail version */
+.followBox {
+    width: 308px;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    color: #003399;
+    font-weight: normal;
+}
+.followBox-follow {
+    margin-top: 6px;
+}
+.followBox-follow img {
+    border: 0;
+}
+.followBox-imgLink {
+    float: left;
+    margin-right: 6px;
+}
+.followBox-rightRail .followBox-twitter,
+.followBox-rightRail .followBox-email {
+    float: left;
+    width: 50%;
+}
+.followBox-rightRailCompact .followBox-twitter,
+.followBox-rightRail .followBox-email {
+    margin-bottom: 6px;
+}
+
+.followBox-rightRailCompact .followBox-twitter {
+    min-height:25px;
+}
+.followBox-header {
+    font-size: 11px;
+    font-weight: bold;
+    color:#000;
+    text-transform: uppercase;
+    padding: 0px;
+    margin-bottom: 6px;
+}
+.followBox-rightRailCompact .followBox-adchoices {
+    float: right;
+    font-family: inherit;
+    text-decoration: none;
+}
+.followBox-rightRailCompact .followBox-adchoices img {
+    vertical-align: middle;
+}
+.followBox a, .followBox a:visited {
+    color: #003399;
+    text-decoration: none;
+}
+.followBox a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Home page version */
+.followBox-homeRow {
+	width: 100%;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: bold;
+	padding-bottom: 6px;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 6px;
+}
+.followBox-homeEmailIcon {
+	padding-left: 22px;
+    background: url("../../../../../../../media/mstsage/imgs/sprite-icon2.png") no-repeat scroll 0 0 transparent;
+	background-position: 0 -538px;
+}
+.followBox-homeStoreIcon {	
+    display:block;
+	padding-left: 26px;
+    background: url("../../../../img/widgets/global/page/followus_tshirt_icon.png") no-repeat scroll 0 0 transparent;
+}
+.followBox-homeEmailSignup {
+	float: right;
+}
+
+a.twitter-follow-button { /*a version is before twitter swaps it out */
+  background-color: #eee;
+  background-image: -webkit-linear-gradient(#fff,#dedede);
+  background-image: linear-gradient(#fff,#dedede);
+  border: #ccc solid 1px;
+  border-radius: 3px;
+  color: #333;
+  cursor: pointer;
+  font-size: 11px;
+  font-family: 'Helvetica Neue',Arial,sans-serif;
+  font-weight: bold;
+  height: 25px;
+  padding: 3px 6px;
+  position: relative;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+  white-space: nowrap;
+}

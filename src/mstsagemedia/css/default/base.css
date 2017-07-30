@@ -1,0 +1,163 @@
+/**
+ * Base Rules for IGN Bootstrap
+ * ========================================================================== */
+
+body {
+    background-color: #fff;
+    color: #333435;
+    font-family: 'ars-maquette-web', sans-serif;
+    font-size: 14px;
+    line-height: 1.643;
+    min-width: 1096px;
+}
+
+html.hyperlight body {
+    background-color: #fff;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover, a:active {
+    /*TODO: Fill this out;*/
+}
+
+/* Text-level semantics */
+
+/**
+ * TODO: DETERMINE BETTER DEFAULT VALUES
+ */
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+/* Tablet CSS */
+html.tablet body {
+    font-size: 15px;
+}
+
+.clear-fix::before, .clear-fix::after {
+    content: ' ';
+    display: table;
+}
+
+.clear-fix::after {
+    clear: both;
+}
+
+/* TODO: REMOVE .ign-grid STYLES FROM THIS FILE. BASE.CSS IS BEING USED BY MANY FILES
+ * SO REMOVING THESE STYLES IS DANGEROUS BUT THEY ARE NOW BEING HANDLED IN /CORE/CSS/LIB/GRID.CSS;
+ */
+
+/**
+ * Layout
+ ========================================================================== */
+.ign-grid {
+/* holds items within the set width */
+    background: #fff;
+    display: block;
+    margin: 0 auto;
+    width: 1096px;
+}
+
+.ign-grid-padding {
+    padding: 18px;
+}
+
+.ign-grid-stripe {
+    border-left: 18px solid #bf1313;
+    box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+}
+
+.ign-grid-left-rail {
+    float: left;
+    font-size: 12px;
+    line-height: 1.333;
+    width: 218px;
+}
+
+.ign-grid-right-rail {
+    float: right;
+    font-size: 12px;
+    line-height: 1.333;
+    padding: 0 18px;
+    width: 182px;
+}
+
+.ign-pre-grid, .ign-post-grid {
+    box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+    clear: both;
+    width: 100%;
+}
+
+.ign-grid-stripe #ign-header {
+    margin-left: -18px;
+}
+
+
+html.tablet .ign-grid-left-rail {
+    font-size: 13px;
+}
+
+/* 1240 Grid */
+@media screen and (min-width: 1260px) and (max-width: 1899px) {
+    body {
+        font-size: 17px;
+        line-height: 1.588;
+    }
+    .ign-grid {
+        width: 1240px;
+    }
+
+    .ign-grid-padding {
+        padding: 24px;
+    }
+
+    .ign-grid-left-rail {
+        font-size: 14px;
+        line-height: 1.357;
+        width: 245px;
+    }
+    .ign-grid-right-rail {
+        font-size: 13px;
+        line-height: 1.385;
+        padding: 0 24px;
+        width: 194px;
+    }
+}
+
+/* 1544 Grid */
+@media screen and (min-width: 1900px) {
+    body {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+    .ign-grid {
+        width: 1544px;
+    }
+
+    .ign-grid-padding {
+        padding: 27px;
+    }
+
+    .ign-grid-left-rail {
+        font-size: 16px;
+        line-height: 1.313;
+        width: 295px;
+    }
+    .ign-grid-right-rail {
+        font-size: 14px;
+        line-height: 1.357;
+        padding: 0 27px;
+        width: 225px;
+    }
+}
+
+@media print {
+    .noprint {
+        display: none;
+    }
+}

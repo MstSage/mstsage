@@ -1,0 +1,410 @@
+.hero-unit-container {
+    background-color: #000;
+    background-position: center;
+    background-size: cover;
+    height: 360px;
+    margin-left: -78px;
+    position: relative;
+    width: 872px; /* 232 sidekick + 640 min herounitstage width */
+    z-index: 2; /* for floating media in spine */
+}
+
+.hero-unit-stage {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-unit-stage,
+.hero-unit-stage object {
+    height: 360px;
+    width: 640px;
+}
+
+.hero-unit-stage .fullscreen object {
+    height: 100%;
+    width: 100%;
+}
+
+.hero-unit-container.hero-poster-expand .hero-unit-stage {
+    width: 100%;
+}
+
+.hero-poster {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    max-width: 100%;
+}
+
+.hero-poster:before {
+    background-image: -moz-linear-gradient(bottom, rgba(0,0,0,.65)40%, rgba(0,0,0,0)); /* Firefox 3.6 - 15 */
+    background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,.65)40%, rgba(0,0,0,0)); /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
+    background-image: linear-gradient(to top, rgba(0,0,0,.65) 40%, rgba(0,0,0,0)); /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
+    bottom: 0;
+    content: ' ';
+    display: block;
+    height: 145px;
+    position: absolute;
+    width: 100%;
+}
+
+.hero-unit-container.no-sidekick .hero-poster {
+    background-position: center;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+
+.hero-poster:hover {
+    cursor: pointer;
+}
+
+.hero-content {
+    bottom: 0;
+    color: #fff;
+    left: 0;
+    position: absolute;
+    user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;
+    width: 100%;
+}
+
+.hero-countdown {
+    box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box;
+    cursor: pointer;
+    float: left;
+    height: 122px;
+    opacity: 1;
+    position: relative;
+    text-align: center;
+    transition: opacity 0.8s; -webkit-transition: opacity 0.8s; -moz-transition: opacity 0.8s; -ms-transition: opacity 0.8s;
+    width: 144px;
+}
+
+.hero-countdown svg {
+    bottom: 0;
+    box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box;
+    height: 66px;
+    left: 0;
+    margin: 0 19px 34px 54px;
+    position: absolute;
+    width: 66px;
+}
+
+.hero-pause {
+    opacity: 1;
+    transition: opacity 0.25s; -webkit-transition: opacity 0.25s; -moz-transition: opacity 0.25s; -ms-transition: opacity 0.25s;
+}
+
+.hero-play {
+    opacity: 0;
+    transition: opacity 0.25s; -webkit-transition: opacity 0.25s; -moz-transition: opacity 0.25s; -ms-transition: opacity 0.25s;
+}
+
+.hero-countdown .outer-circle {
+    fill: rgba(255,255,255,0);
+    stroke-width: 3%;
+    stroke: rgba(255,255,255,0.2);
+    transition: all 0.25s; -webkit-transition: all 0.25s; -moz-transition: all 0.25s; -ms-transition: all 0.25s;
+}
+
+.hero-countdown.paused .outer-circle {
+    stroke: rgba(255,255,255,0);
+    fill: rgba(255,255,255,0.40);
+}
+
+
+.hero-countdown .hero-countdown svg:hover .outer-circle {
+    stroke: rgba(255,255,255,0.40);
+}
+
+.hero-countdown .inner-circle {
+    fill: rgba(255,255,255,1);
+}
+
+.hero-countdown-fuse {
+    stroke-width: 3%;
+    stroke: white;
+    transform-origin: 4px 4px 0; -webkit-transform-origin: 4px 4px 0; -moz-transform-origin: 4px 4px 0; -ms-transform-origin: 4px 4px 0;
+    transform: scale(0.7); -webkit-transform: scale(0.7); -moz-transform: scale(0.7); -ms-transform: scale(0.7);
+}
+
+.hero-countdown.paused .hero-countdown-fuse {
+    display: none;
+}
+
+.hero-countdown.done {
+    opacity: 0;
+}
+
+.hero-countdown span {
+    color: white;
+    display: block;
+    font-family: ars-maquette-web, arial;
+    font-size: 64px;
+    margin-top: -0.55em;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+}
+
+.hero-countdown:hover span,
+.hero-countdown.paused span,
+.paused .hero-pause {
+    opacity: 0 !important;
+}
+
+.paused .hero-play {
+    opacity: 1;
+}
+
+.hero-details {
+    position: relative;
+    transform: translateY(-50%);
+    position: absolute;
+    top: 44%;
+    left: 144px;
+}
+
+.hero-title,
+.author-text {
+    font-family: ars-maquette-web, arial;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.333;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 7px;
+}
+
+.hero-title.short {
+    width: 229px;
+}
+
+.hero-title.long {
+    width: 338px;
+}
+
+.hero-ticker,
+.hero-autoplay-prompt,
+.author-name {
+    float: left;
+    font-family: 'ff-din-round-web-pro', sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 1.333;
+    text-transform: uppercase;
+}
+
+.hero-ticker {
+    margin-right: .5em;
+}
+
+.hero-autoplay-prompt {
+    color: #959595;
+}
+
+
+.hero-autoplay-prompt.autoplay-off {
+    content: 'Turn Autoplay On?';
+}
+
+.hero-autoplay-prompt:hover {
+    color: #fff;
+}
+
+.hero-poster.read .hero-autoplay-prompt,
+.hero-poster.read .hero-ticker {
+    display: none;
+}
+
+.hero-unit-sidekick {
+    background-color: #333;
+    color: #fff;
+    float: right;
+    height: 360px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 232px;
+}
+
+.hero-unit-sidekick.hidden {
+    display: none;
+}
+
+.hero-unit-container.no-sidekick .hero-unit-sidekick {
+    display: none;
+}
+
+/* begin css for author avatar in reviews */
+.herounit-author-container {
+  position: absolute;
+  width: 210px;
+  right: 0px;
+  bottom: 0px;
+  text-align: left;
+  color: #fff;
+  z-index: 8;
+  font-size: 14px;
+  line-height: 1.357;
+  font-family: ars-maquette-web, arial;
+  font-weight: bold;
+  display: inline-block;
+  overflow: hidden;
+  float: left;
+  margin-bottom: 38px;
+}
+
+.herounit-author-container .user-image {
+  border-radius: 50%;
+  width: 46.2px;
+  height: 46.2px;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.35);
+  margin-top: 7px;
+  float: left;
+  margin-bottom: 7px;
+}
+
+.herounit-author-container .author-field {
+    float: left;
+    padding: 13px 0px 0px 22px;
+}
+
+.author-name a {
+    color: #fff;
+}
+
+.author-name,
+.author-text {
+    display: block;
+}
+
+@media screen and (min-width: 1260px) and (max-width: 1899px) {
+    .hero-unit-container {
+        height: 416px;
+        margin-left: -90px;
+        width: 986px; /* 246 sidekick + 740 min herounitstage width */
+    }
+    .hero-unit-sidekick {
+        height: 416px;
+        width: 246px;
+    }
+
+    .hero-unit-stage,
+    .hero-unit-stage object {
+        height: 416px;
+        width: 740px;
+    }
+
+    .hero-countdown {
+        height: 137px;
+        width: 165px;
+    }
+
+    .hero-countdown svg {
+        height: 75px;
+        margin: 0 24px 38px 61px;
+        width: 75px;
+    }
+
+    .hero-title,
+    .author-text {
+        font-size: 14px;
+        line-height: 1.357;
+    }
+
+    .hero-title.short {
+        width: 251px;
+    }
+
+    .hero-title.long {
+        width: 374px;
+    }
+
+    .herounit-author-container .user-image {
+        height: 52.5px;
+        width: 52.5px;
+    }
+
+    .herounit-author-container {
+        margin-bottom: 43px;
+        width: 220px;
+    }
+
+    .hero-details {
+        left: 165px;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .hero-unit-container {
+        height: 540px;
+        margin-left: -113px;
+        width: 1238px; /* 278 sidekick + 960 min herounitstage width */
+    }
+    .hero-unit-sidekick {
+        height: 540px;
+        width: 278px;
+    }
+
+    .hero-unit-stage,
+    .hero-unit-stage object {
+        height: 540px;
+        width: 960px;
+    }
+
+    .hero-countdown {
+        height: 177px;
+        width: 211px;
+    }
+
+    .hero-countdown svg {
+        height: 95px;
+        margin: 0 28px 50px 79px;
+        width: 95px;
+    }
+
+    .hero-title,
+    .author-text {
+        font-size: 16px;
+        line-height: 1.313;
+    }
+
+    .hero-title.short {
+        width: 312px;
+    }
+
+    .hero-title.long {
+        width: 485px;
+    }
+
+    .hero-ticker,
+    .hero-autoplay-prompt,
+    .author-name {
+        font-size: 14px;
+        line-height: 1.313;
+    }
+
+    .herounit-author-container .user-image {
+        height: 66.5px;
+        width: 66.5px;
+    }
+
+    .herounit-author-container {
+        margin-bottom: 58px;
+        width: 275px;
+    }
+
+    .hero-details {
+        left: 211px;
+    }
+}
+
+

@@ -1,0 +1,501 @@
+/* Partial reset */
+#header-container a, #header-container input {
+    outline: 0;
+    resize: none;
+}
+/* Input field placeholder text styling requires separate rules per browser */
+#header-container #search-input::-webkit-input-placeholder {
+    color: #bebebe;
+    font-weight: normal;
+}
+#header-container #search-input::-moz-placeholder {
+    color: #bebebe;
+    font-weight: normal;
+}
+#header-container #search-input:-ms-input-placeholder {
+    color: #bebebe;
+    font-weight: normal;
+}
+/* END partial reset */
+
+/* General Styles */
+#header-container {
+    background: #fff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 auto;
+    min-width: 100%;
+    position: relative;
+    z-index: 5000;
+}
+
+#header-container.no-spine {
+    height: 41px;
+}
+
+/* MstSage Entertainment Logo */
+
+#header-container #mstsage-logo {
+    background: #bf1313;
+    float: left;
+    height: 74px;
+    position: relative;
+    width: 132px;
+}
+
+#header-container #mstsage-logo::after {
+    background: url(../../../../../img/widgets/global/page/header/global-header-sprite.png) #bf1313 15px -104px no-repeat;
+    content: '';
+    cursor: pointer;
+    float: left;
+    font-size: 37px;
+    height: 32px;
+    margin-top: 30px;
+    width: 132px;
+}
+
+#header-container #mstsage-logo:hover,
+#header-container #mstsage-logo:hover::after {
+    background-color: #ba1e26;
+}
+
+/* Global Navigation Bar */
+#header-container #header-nav {
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+    background-color: white;
+    clear: both;
+    height: 41px;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+}
+
+#header-container .browse {
+    box-sizing: border-box;
+    height: 100%;
+    padding: 0 0 0 18px;
+    position: relative;
+}
+
+#header-container #header-nav.theme-light .browse {
+    background-color: #c0c0c0;
+}
+
+#header-container #header-nav.theme-dark {
+    background-color: #252627;
+}
+
+#header-container .browse .mstsage-menu {
+    padding: 10px 0 60px 18px;
+}
+
+#header-container .browse.browse-tablet .mstsage-menu {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+#header-container .browse .mstsage-menu::before {
+    left: 28px;
+}
+
+#header-container .browse #browse-dropdown .browse-category {
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+#header-container .browse #browse-dropdown .browse-category li {
+    opacity: 0.8;
+}
+
+#header-container .browse #browse-dropdown .browse-category li:hover {
+    opacity: 1;
+}
+
+#header-container .browse #browse-dropdown .browse-category .browse-link {
+    line-height: 2em;
+}
+
+#header-container #browse-gaming {
+    text-align: right;
+    width: 40%;
+}
+
+#header-container #browse-gaming,
+#header-container #browse-entertainment {
+    margin: 1em 0;
+}
+
+#header-container #browse-entertainment,
+#header-container #browse-more {
+    margin-left: 9%;
+    width: 50%;
+}
+
+#header-container #browse-more {
+    font-size: 0.9em;
+}
+
+#header-container .browse #browse-dropdown #browse-more.browse-category .browse-link {
+    line-height: 1.43em;
+    opacity: .7;
+}
+
+#header-container .browse .mstsage-logo {
+    display: block;
+    height: 100%;
+    opacity: 1;
+    position: absolute;
+    right: 15px;
+    width: 70px;
+}
+
+#header-container .browse .mstsage-logo.locale-selector-present {
+    right: 2em;
+}
+
+#header-container .theme-light .browse .mstsage-logo {
+    color: #fff;
+}
+
+#header-container .theme-dark .browse .mstsage-logo {
+    color: #b8bbbf;
+}
+
+#header-container .browse .mstsage-logo .icon-logo {
+    height: 100%;
+    width: 100%;
+}
+
+/* Locale Selector */
+#header-container #header-nav .locale-shortcode {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    color: #fff;
+    float: left;
+    font-family: 'ff-din-round-web-pro', sans-serif;
+    font-size: 0.7em;
+    line-height: 1.6em;
+    padding: 0 0.5em;
+    position: absolute;
+    right: 0;
+    text-transform: uppercase;
+    top: 0;
+}
+
+#header-container #header-nav.theme-light .locale-shortcode {
+    text-shadow: 0 0 3px #bf1313;
+    background-color: #a20a0a;
+}
+
+#header-container #header-nav.theme-dark .locale-shortcode {
+    background-color: #1c1d1e;
+    color: #bebebe;
+}
+
+#header-container #header-nav .locale-shortcode:hover {
+    color: white;
+    cursor: pointer;
+}
+
+#header-container #header-nav .icon-dropdown::after {
+    background: transparent;
+    display: none;
+    margin-top: -0.5em;
+    width: 1.7em;
+}
+
+#header-container #header-nav .icon-dropdown:hover::after {
+    display: inline-block;
+    transform: rotateX(180deg); -webkit-transform: rotateX(180deg);
+}
+
+/* */
+
+#header-container .search-container {
+    box-sizing: border-box;
+    float: left;
+    height: 100%;
+    padding: 6.5px;
+    position: relative;
+    width: 119px;
+}
+
+#header-container #search-input {
+    -webkit-appearance: textfield;
+    border-radius: 3px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    height: 29px;
+    padding: 3px 25px 4px 6px;
+    width: 100%;
+}
+
+#header-container #header-nav.theme-light #search-input {
+    background-color: #f2f2f2;
+    border: 1px solid rgba(0,0,0,0.25);
+}
+
+#header-container #header-nav.theme-dark #search-input {
+    background-color: #252627;
+    border: 1px solid #b8bbbf;
+    color: #b8bbbf;
+}
+
+#mstsage-shows .mstsage-shows-dropdown {
+    width: 1096px;
+}
+
+#mstsage-shows .mstsage-menu::before {
+    left: 366px;
+}
+
+/* Modifier Classes */
+body.disable-scroll {
+    overflow: hidden;
+}
+
+#header-container .hidden {
+    display: none;
+}
+
+#header-container .fixed {
+    left: 0px;
+    max-width: 1096px;
+    min-width: 1096px;
+    position: fixed!important;
+    right: 0px;
+    top: 0px;
+}
+
+.clear-fix::before, .clear-fix::after {
+    content: ' ';
+    display: table;
+}
+.clear-fix::after {
+    clear: both;
+}
+
+#mstsage-shows .mstsage-show {
+    width: 196px;
+    margin: 0 20px 0 0;
+    padding: 20px 0px 0 0;
+}
+
+#mstsage-shows .mstsage-show.first {
+    margin: 0;
+    padding: 20px 31px 0 31px;
+}
+
+#mstsage-shows .mstsage-show-art {
+    height: 110px;
+}
+
+#mstsage-shows .mstsage-show .latest-episode {
+    height: 112px;
+}
+
+/* Media queries for layout breakpoints */
+/* 1240 Grid */
+@media screen and (min-width: 1260px) and (max-width: 1899px) {
+    #header-container .fixed {
+        max-width: 1240px;
+    }
+
+    #header-container .browse #browse-dropdown {
+        font-size: 14px;
+    }
+
+    #mstsage-shows .mstsage-menu::before {
+        left: 394px;
+    }
+
+    #mstsage-shows .mstsage-shows-dropdown {
+        font-size: 17px;
+        width: 1240px;
+    }
+
+    #mstsage-shows:hover .mstsage-shows-dropdown {
+        height: 365px;
+    }
+
+    #mstsage-shows.mstsage-shows:hover .mstsage-shows-dropdown,
+    #mstsage-shows ul {
+        height: 315px;
+    }
+
+    #mstsage-shows .mstsage-show {
+        margin-right: 10px;
+        padding: 20px 0 0 0;
+        width: 241px;
+    }
+
+    #mstsage-shows .mstsage-show.first {
+        margin: 0;
+        padding: 20px 22px 0 22px;
+    }
+
+    #mstsage-shows .mstsage-show-art {
+        height: 127px;
+    }
+
+    #mstsage-shows .mstsage-show.first,
+    #mstsage-shows .mstsage-show-art,
+    #mstsage-shows .mstsage-show-image {
+        width: 240px;
+    }
+
+    #mstsage-shows .mstsage-show .latest-episode {
+        height: 131px;
+    }
+
+    #mstsage-shows .mstsage-show .play-latest {
+        bottom: 18px;
+    }
+
+    #mstsage-shows .mstsage-shows-list-container {
+        width: 150px;
+    }
+
+    #mstsage-shows .mstsage-shows-list-container.col-2 {
+        width: 300px;
+    }
+
+    #mstsage-shows .mstsage-shows-list-container.col-3 {
+        width: 450px;
+    }
+
+    #mstsage-shows .mstsage-shows-list {
+        width: 150px;
+    }
+
+    #mstsage-shows .mstsage-shows-list li {
+        margin: 0 0 .8em 0;
+    }
+
+    #mstsage-shows .mstsage-show .schedule-description,
+    #mstsage-shows .mstsage-show .episode-title,
+    #mstsage-shows .mstsage-shows-list li a {
+        font-size: .83em;
+        line-height: 1.357em;
+    }
+
+    #mstsage-shows .mstsage-show .series-title,
+    #mstsage-shows .mstsage-show .play-latest span,
+    #mstsage-shows .more-shows a {
+        font-size: .75em;
+    }
+
+    #mstsage-shows .more-shows a::before,
+    #mstsage-shows .more-shows a::after {
+        background-size: 1.2em 1.2em;
+        vertical-align: -0.1em;
+    }
+}
+
+/* 1544 Grid */
+@media screen and (min-width: 1900px) {
+    #header-container .fixed {
+        max-width: 1544px;
+    }
+
+    #header-container .browse #browse-dropdown {
+        font-size: 16px;
+    }
+
+    #mstsage-shows .mstsage-menu::before {
+        left: 444px;
+    }
+
+    #mstsage-shows .mstsage-shows-dropdown {
+        font-size: 20px;
+        width: 1545px;
+    }
+
+    #mstsage-shows:hover .mstsage-shows-dropdown {
+        height: 425px;
+    }
+
+    #mstsage-shows.mstsage-shows:hover .mstsage-shows-dropdown,
+    #mstsage-shows ul {
+        height: 375px;
+    }
+
+    #mstsage-shows .mstsage-show {
+        margin: 0;
+        padding: 20px 8px 0 8px;
+        width: 319px;
+    }
+
+    #mstsage-shows .mstsage-show.first {
+        padding: 20px 16px 0 16px;
+    }
+
+    #mstsage-shows .mstsage-show-art {
+        height: 161px;
+    }
+
+    #mstsage-shows .mstsage-show.first,
+    #mstsage-shows .mstsage-show-art,
+    #mstsage-shows .mstsage-show-image {
+        width: 303px;
+    }
+
+    #mstsage-shows .mstsage-show .latest-episode {
+        height: 168px;
+    }
+
+    #mstsage-shows .mstsage-show .play-latest {
+        bottom: 25px;
+    }
+
+    #mstsage-shows .mstsage-shows-list-container {
+        margin: 0 40px 0 0;
+        width: 190px;
+    }
+
+    #mstsage-shows .mstsage-shows-list-container.col-2 {
+        width: 380px;
+    }
+
+    #mstsage-shows .mstsage-shows-list-container.col-3 {
+        width: 570px;
+    }
+
+    #mstsage-shows .mstsage-shows-list-container.col-3 {
+        margin: 0;
+    }
+
+    #mstsage-shows .mstsage-shows-list {
+        width: 190px;
+    }
+
+    #mstsage-shows .mstsage-shows-list li {
+        margin: 0 0 .9em 0;
+    }
+
+    #mstsage-shows .mstsage-show .schedule-description,
+    #mstsage-shows .mstsage-show .episode-title,
+    #mstsage-shows .mstsage-shows-list li a {
+        font-size: .8em;
+        line-height: 1.313em;
+    }
+
+    #mstsage-shows .mstsage-show .series-title,
+    #mstsage-shows .mstsage-show .play-latest span,
+    #mstsage-shows .more-shows a {
+        font-size: .75em;
+    }
+
+    #mstsage-shows .more-shows a::before,
+    #mstsage-shows .more-shows a::after {
+        background-size: 1.2em 1.2em;
+        vertical-align: -0.1em;
+    }
+}

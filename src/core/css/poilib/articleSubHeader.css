@@ -1,0 +1,22 @@
+.articleSubHeader {
+    color: #bf1313;
+    font-family: "ars-maquette-web", sans-serif;
+    font-size: 1.294em;
+    font-weight: bold;
+    padding: 1.4em 0em 0em 0em;
+    position: relative;
+}
+
+.articleSubHeader.icon-pointy:after,
+.has-svg .articleSubHeader.icon-pointy:after {
+    position: absolute;
+    left: -1.2em;
+    bottom: 0.6em;
+    height: 1em;
+    width: 1em;
+}
+
+.has-svg .articleSubHeader.icon-pointy:after {
+    background-color: #bf1313;
+    bottom: 0.3em;
+}

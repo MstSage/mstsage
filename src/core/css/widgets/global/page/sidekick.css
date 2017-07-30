@@ -1,0 +1,347 @@
+#sidekick {
+    height: 360px;
+    position: relative;
+}
+
+#sidekick .sidekick-branded-series {
+    display: none;
+    overflow: hidden;
+}
+
+#sidekick.is-branded .sidekick-branded-series {
+    display: block;
+}
+
+#sidekick .sidekick-branded-series .series-image-frame {
+    position: absolute;
+}
+
+#sidekick,
+#sidekick .sidekick-branded-series,
+#sidekick .sidekick-branded-series .series-image-frame,
+#sidekick .sidekick-branded-series .series-image {
+    width: 232px;
+}
+
+#sidekick .sidekick-branded-series .series-image {
+    bottom: -9999px;
+    left: -9999px;
+    margin: auto;
+    position: absolute;
+    right: -9999px;
+    top: -9999px;
+}
+
+#sidekick .sidekick-branded-series,
+#sidekick .sidekick-branded-series .series-image-frame {
+    height: 240px;
+}
+
+#sidekick .sidekick-branded-series .branded-image {
+    box-sizing: border-box;
+    height: 62px;
+    margin: 62px 0px 8px 0px;
+    position: relative;
+    max-width: 250px;
+}
+
+#sidekick .sidekick-branded-series .separator {
+    border-bottom: 1px solid #fff;
+    height: 0px;
+    margin: 0 auto 8px auto;
+    position: relative;
+    width: 48px;
+}
+
+#sidekick .sidekick-branded-series .schedule-description {
+    color: #fff;
+    font-size: .86em;
+    font-size: 12px;
+    line-height: 1.333em;
+    margin: auto;
+    position: relative;
+    width: 100px;
+}
+
+#sidekick .sidekick-branded-series .chess {
+    display: none;
+}
+
+#sidekick .sidekick-branded-series .series-sponsored-logo {
+    box-sizing: border-box;
+    display: none;
+    margin: 0px;
+    max-height: 45px;
+    max-width: 105px;
+    position: relative;
+}
+
+#sidekick .sidekick-branded-series .series-sponsored-text {
+    color: #868686;
+    display: none;
+    font-family: 'ars-maquette-web', sans-serif;
+    font-size: 10px;
+    margin: 15px auto 0px auto;
+    position: relative;
+}
+
+#sidekick .sidekick-branded-series .schedule-description,
+#sidekick .sidekick-videos .video-info {
+    font-size: 12px;
+}
+
+#sidekick .sidekick-branded-series .branded-image,
+#sidekick .sidekick-branded-series .separator,
+#sidekick .sidekick-branded-series .schedule-description,
+#sidekick .sidekick-branded-series .series-sponsored-text,
+#sidekick .sidekick-branded-series .series-sponsored-logo {
+    z-index: 1;
+}
+
+#sidekick .sidekick-branded-series:after {
+    background-image: -moz-linear-gradient(bottom, rgba(0,0,0,.8)40%, rgba(0,0,0,0));
+    background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,.8)40%, rgba(0,0,0,0));
+    background-image: linear-gradient(to top, rgba(0,0,0,.8)40%, rgba(0,0,0,0));
+    bottom: 0;
+    content: '';
+    height: 110px;
+    left: 0;
+    opacity: .8;
+    position: absolute;
+    width: 100%;
+}
+
+#sidekick .sidekick-videos {
+    height: 100%;
+}
+
+#sidekick.is-branded .sidekick-videos {
+    height: 120px;
+    overflow: hidden;
+    position: relative;
+}
+
+#sidekick .sidekick-videos:before {
+    background-color: #000;
+    content: '';
+    display: block;
+    height: 100%;
+    opacity: .75;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+
+#sidekick .sidekick-videos .video {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+#sidekick .video .video-image-frame {
+    overflow: hidden;
+    position: relative;
+}
+
+#sidekick .video .video-image {
+    bottom: -9999px;
+    left: -9999px;
+    margin: auto;
+    position: absolute;
+    right: -9999px;
+    top: -9999px;
+}
+
+#sidekick .video .video-image-frame,
+#sidekick .video .video-image {
+    height: 100%;
+}
+
+#sidekick.is-branded .video .video-image {
+    height: auto;
+    width: 100%;
+}
+
+#sidekick .sidekick-videos .video-info {
+    bottom: 0;
+    color: #959595;
+    display: block;
+    left: 50%;
+    margin-bottom: 22px;
+    margin-left: -91px;
+    position: absolute;
+    text-align: center;
+    user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;
+    width: 182px;
+    z-index: 3;
+}
+
+#sidekick.is-branded .sidekick-videos .video-info {
+    margin-bottom: 1em;
+    max-height: 3.6em;
+}
+
+/* this rule is needed so that hover state can still override. */
+#sidekick .sidekick-videos .video-info {
+    display: none;
+}
+
+#sidekick .sidekick-videos:hover .video-info {
+    display: block;
+}
+
+#sidekick .sidekick-videos .video-title {
+    font-family: 'ars-maquette-web', sans-serif;
+    font-size: 12px;
+    line-height: 1.333;
+    max-height: 4em;
+}
+
+#sidekick.is-branded .sidekick-videos .video-title {
+    max-height: 2.6em;
+}
+
+/* Modifying button class from patterns.css */
+#sidekick .sidekick-videos .button {
+    display: inline-block;
+    left: 50%;
+    margin-left: -33px;
+    margin-top: -11px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 50%;
+    z-index: 3;
+}
+
+#sidekick.is-branded .sidekick-videos .button {
+    top: 30%;
+}
+
+#sidekick .sidekick-videos .button #sidekick-next-arrow {
+    background-size: 1em 1em;
+    display: inline-block;
+    fill: #959595;
+    height: 1em;
+    margin-left: -0.2em;
+    transition: fill 0.1s ease; -webkit-transition: fill 0.1s ease; -moz-transition: fill 0.1s ease; -ms-transition: fill 0.1s ease;
+    vertical-align: -0.2em;
+    width: 1em;
+}
+
+#sidekick .sidekick-videos .button:hover #sidekick-next-arrow {
+    fill: #000;
+}
+
+/* 1240 Grid */
+@media screen and (min-width: 1260px) and (max-width: 1899px) {
+    #sidekick {
+        height: 416px;
+    }
+
+    #sidekick,
+    #sidekick .sidekick-branded-series,
+    #sidekick .sidekick-branded-series .series-image-frame,
+    #sidekick .sidekick-branded-series .series-image {
+        width: 246px;
+    }
+
+    #sidekick .sidekick-branded-series,
+    #sidekick .sidekick-branded-series .series-image-frame {
+        height: 278px;
+    }
+
+    #sidekick .sidekick-branded-series .branded-image {
+        margin: 90px 0px 8px 0px;
+    }
+
+    #sidekick.is-branded .sidekick-videos {
+        height: 138px;
+    }
+
+    #sidekick .sidekick-videos .video-info {
+        margin-bottom: 25px;
+        margin-left: -97px;
+        width: 194px;
+    }
+
+    #sidekick .sidekick-videos .video-title {
+        font-size: 14px;
+        line-height: 1.357;
+    }
+
+    #sidekick .sidekick-branded-series .schedule-description,
+    #sidekick .sidekick-videos .video-info {
+        font-size: 14px;
+    }
+
+    #sidekick .sidekick-branded-series .series-sponsored-text {
+        font-size: 12px;
+    }
+
+    /* Modifying button class from patterns.css */
+    #sidekick .sidekick-videos .button {
+        font-size: 15px;
+        margin-left: -40px;
+        margin-top: -12px;
+        padding: 0.4em 0.8em 0.2em 0.8em;
+    }
+}
+
+/* 1544 Grid */
+@media screen and (min-width: 1900px) {
+    #sidekick {
+        height: 539px;
+    }
+
+    #sidekick,
+    #sidekick .sidekick-branded-series,
+    #sidekick .sidekick-branded-series .series-image-frame,
+    #sidekick .sidekick-branded-series .series-image {
+        width: 278px;
+    }
+
+    #sidekick .sidekick-branded-series,
+    #sidekick .sidekick-branded-series .series-image-frame {
+        height: 384px;
+    }
+
+    #sidekick .sidekick-branded-series .branded-image {
+        margin: 140px 0px 8px 0px;
+    }
+
+    #sidekick.is-branded .sidekick-videos {
+        height: 156px;
+    }
+
+    #sidekick .sidekick-videos .video-info {
+        margin-bottom: 29px;
+        margin-left: -112px;
+        width: 224px;
+    }
+
+    #sidekick .sidekick-videos .video-title {
+        font-size: 16px;
+        line-height: 1.313;
+    }
+
+    #sidekick .sidekick-branded-series .schedule-description,
+    #sidekick .sidekick-videos .video-info {
+        font-size: 16px;
+    }
+
+    #sidekick .sidekick-branded-series .series-sponsored-text {
+        font-size: 14px;
+    }
+
+    /* Modifying button class from patterns.css */
+    #sidekick .sidekick-videos .button {
+        border: 2px solid #959595;
+        font-size: 17px;
+        margin-left: -45px;
+        margin-top: -16px;
+    }
+
+    #sidekick .sidekick-videos .button:hover {
+        border: 2px solid #fff;
+    }
+}

@@ -1,0 +1,20 @@
+#mstsageHeader {
+    height: 84px;
+}
+
+.hot_headers {
+    font-size: 16px;
+    line-height: 18px;
+    margin: 18px 0;
+    font-weight: bold;
+}
+
+#legacyEventBox {
+    clear:both;
+    margin-bottom: 12px;
+}
+
+.sectionBodyDivider{
+    border-top: 10px solid #333;
+    margin-bottom: 12px;
+}

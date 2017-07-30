@@ -1,0 +1,318 @@
+@-moz-document url-prefix() {
+    header{
+        display: block;
+    }
+}
+
+@media print {
+    .noprint {
+        display: none;
+    }
+}
+
+/*
+ * Hide ad containers if user is Prime and has ads disabled
+ */
+html.no-ads .chess-container,     /* generic */
+html.no-ads .feed-chess-container /* blogrolls and feeds */
+{
+    height: 0;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #000;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+.shell {
+/* holds items within the set width */
+    background: #fff;
+    -moz-box-shadow: 0px 0px 8px #ccc;
+    -webkit-box-shadow: 0px 0px 8px #ccc;
+    box-shadow: 0px 0px 8px #ccc; /* looking toward the future */
+    width: 972px;
+    margin: 0px auto;
+    display: block;
+    margin: 0 auto 12px;
+}
+
+.clear:after {
+    clear: both;
+    content: ' ';
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0
+}
+
+a:link, a:visited {
+    color: #039; /* this color is a set standard for MstSage Entertainment */
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: #039;
+    text-decoration: underline;
+}
+
+a.moreLink {
+    white-space: nowrap;
+}
+
+.indexHeader,
+.videoContainer {
+    margin-bottom: 12px;
+}
+
+.bigImgs {
+    display: block; /*ie fix*/
+}
+
+.rightrail_module {
+    margin-bottom: 12px;
+}
+
+/* start
+======================================================== video thumb nail css */
+.videoThumb {
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.videoThumb a {
+    display: block;
+}
+
+.videoThumb .caption {
+    display: block;
+    font-size: 14px;
+}
+
+.topCaption {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.videoThumb img {
+    border: 1px solid #d32028;
+}
+
+.grid_4.videoThumb img {
+    width: 146px;
+}
+
+.videoThumb .icon {
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    height: 20px;
+    width: 20px;
+    display: block;
+    border: 1px solid #999;
+    background: #222;
+    background: -moz-linear-gradient(100% 100% 90deg, #040404, #333);
+    background: -webkit-gradient(linear, left top, left bottom, from(#333), to(#040404));
+}
+
+.videoThumb.grid_8 .icon {
+    right: 16px;
+}
+
+.videoThumb .icon span {
+    display: block;
+    height: 0px;
+    width: 0px;
+    border-color: transparent transparent transparent #d00;
+    border-style: solid;
+    border-width: 6px 0px 6px 12px;
+    margin: 4px 5px;
+}
+
+/* end
+======================================================== video thumb nail css */
+
+/* start
+======================================================== dividers css */
+.divider_1 {
+    margin-bottom: 12px;
+}
+
+.grid_8.divider_1 {
+    border-top: 1px solid #d32028;
+}
+
+.divider_6 {
+    height: 6px;
+    background: #ccc;
+    margin: 12px 0px;
+}
+
+.divider_3 {
+  height: 3px;
+  background: #ccc;
+  margin: 12px 0px;
+}
+
+.divider_red_3 {
+  height: 3px;
+  border-left: 74px solid #d32028;
+  background: #ccc;
+}
+
+.container_divider_3 {
+    border-top: 3px solid #ccc;
+    padding-top: 12px;
+    margin-bottom: 12px;
+}
+
+.divider_1 .subHeader {
+    background: #d32028;
+    color: #fff;
+    display: block;
+    font-weight: bold;
+    padding: 0px 6px;
+    width: 136px;
+}
+
+
+.diag-blackRule {
+    height: 4px;
+    line-height: 4px;
+    background: url('../../../../media/mstsage/imgs/black_diagonal_repeat.png');
+    margin: 0 auto 12px 0;
+}
+
+.dottedList {
+}
+
+.dottedList li {
+    line-height: 2.5em;
+    border-bottom: 1px dotted #ccc;
+    font-size: 13px;
+    list-style-position: outside; /* here until 2010_wrapper is removed from the site */
+}
+
+.sectionHeader,
+.sectionHeader .divider_red_3 {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.topicTitle {
+    font-family: "proxima-nova-1","proxima-nova-2","helvetica neue",arial,sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    color: #333;
+    margin-bottom: 12px;
+    line-height: 24px;
+    clear: both;
+}
+
+/* end
+======================================================== dividers css */
+
+/* start
+======================================================== ad css */
+.ad_placement.ad_leaderboard {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ad_placement .img_label {
+    float: right;
+    position: relative;
+    bottom: -178px;
+}
+
+/* end
+======================================================== ad css */
+
+/*==============================================================================
+start - body copy items
+*/
+.bodyCopy {
+    margin-bottom: 24px;
+}
+
+.contentPageHeader {
+    font-size: 44px;
+    line-height: 42px;
+}
+
+.contentHeader {
+    font-size: 34px;
+    line-height: 42px;
+}
+
+.contentSubHeader {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.topicSubheader {
+	font-family: "proxima-nova-1","proxima-nova-2","helvetica neue",arial,sans-serif;
+	font-size: 24px;
+	font-weight: 300;
+	color: #666;
+}
+
+p {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 6px 24px 0;
+}
+
+/*==============================================================================
+end - body copy items
+*/
+
+
+/*==============================================================================
+start - generic IGN pagination
+*/
+
+.pagination {
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+/*==============================================================================
+end - generic IGN pagination
+*/
+
+/* temp ad include */
+.bigBangOverlayOverlayClose, .bigBangOverlayClose {
+	display: block;
+	width: 45px;
+	height: 45px;
+	border-radius: 66px;
+	font-size: 25px;
+	color: #fff;
+	line-height: 41px;
+	text-align: center;
+	text-decoration: none;
+	background: #000;
+	opacity: 1;
+	font-weight: bold;
+	border-width: 3px;
+	border-style: solid;
+	border-color: #424242;
+	position: absolute;
+	right: -20px;
+	top: -20px;
+	cursor: pointer;
+}
+
+.bigBangOverlayOverlayClose:hover, .bigBangOverlayClose:hover {
+    background: #fff;
+	color: #000;
+}
+

@@ -1,0 +1,169 @@
+/*
+  3 on the page
+*/
+/* =============================================================================
+  24 column grid base css
+*/
+.container_24{
+  margin:0 auto;
+  width:960px;
+}
+
+.grid_1,.grid_2,.grid_3,.grid_4,.grid_5,.grid_6,
+.grid_7,.grid_8,.grid_9,.grid_10,.grid_11,.grid_12,
+.grid_13,.grid_14,.grid_15,.grid_16,.grid_17,.grid_18,
+.grid_19,.grid_20,.grid_21,.grid_22,.grid_23,.grid_24 {
+  display:inline;
+  float:left;
+  margin:0px 6px;
+}
+.alpha{margin-left:0;}
+.omega{margin-right:0;}
+.container{margin:0px;}
+
+.push_1,.pull_1,
+.push_2,.pull_2,
+.push_3,.pull_3,
+.push_4,.pull_4{
+  position:relative;
+}
+
+
+/* =============================================================================
+  24 column grid even numbers
+*/
+
+.grid_2{width:68px;}
+.grid_4{width:148px;}
+.grid_6{width:228px;}
+.grid_8{width:308px;}
+.grid_10{width:388px;}
+.grid_12{width:468px;}
+.grid_14{width:548px;}
+.grid_16{width:628px;}
+.grid_18{width:708px;}
+.grid_20{width:788px;}
+.grid_22{width:868px;}
+.grid_24{width:948px;}
+
+.grid_2.container{width:80px;}
+.grid_4.container{width:160px;}
+.grid_6.container{width:240px;}
+.grid_8.container{width:320px;}
+.grid_10.container{width:400px;}
+.grid_12.container{width:480px;}
+.grid_14.container{width:560px;}
+.grid_16.container{width:640px;}
+.grid_18.container{width:720px;}
+.grid_20.container{width:800px;}
+.grid_22.container{width:880px;}
+.grid_24.container{width:960px;}
+
+.prefix_2{padding-left:80px}
+.prefix_4{padding-left:160px}
+.prefix_6{padding-left:240px}
+.prefix_8{padding-left:320px}
+
+.push_2{left:80px;}
+.push_4{left:160px;}
+
+.pull_2{left:-80px;}
+.pull_4{left:-160px;}
+
+.mstsage-grid {
+/* holds items within the set width */
+    background: #fff;
+    display: block;
+    margin: 0 auto;
+    width: 1096px;
+}
+
+.mstsage-grid-stripe {
+    border-left: 18px solid #bf1313;
+    box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.mstsage-grid-left-rail {
+    float: left;
+    font-size: 12px;
+    line-height: 1.333;
+    width: 218px;
+}
+
+.mstsage-grid-left-rail.no-stripe {
+    width: 218px;
+}
+
+.mstsage-grid-right-rail {
+    float: right;
+    font-size: 12px;
+    line-height: 1.333;
+    padding: 0 18px;
+    width: 182px;
+}
+
+.mstsage-pre-grid, .mstsage-post-grid {
+    box-sizing: border-box; 
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+    clear: both;
+    width: 100%;
+}
+
+.hyperlight .mstsage-pre-grid {
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.mstsage-grid.mstsage-grid-stripe #mstsage-header {
+    margin-left: -18px;
+}
+
+html.tablet .mstsage-grid-left-rail {
+    font-size: 13px;
+}
+
+/* 1240 Grid */
+@media screen and (min-width: 1260px) and (max-width: 1899px) {
+    .mstsage-grid {
+        width: 1240px;
+    }
+    .mstsage-grid-left-rail {
+        font-size: 14px;
+        line-height: 1.357;
+        width: 245px;
+    }
+    .mstsage-grid-left-rail.no-stripe {
+        width: 245px;
+    }
+    .mstsage-grid-right-rail {
+        font-size: 13px;
+        line-height: 1.385;
+        padding: 0 24px;
+        width: 194px;
+    }
+}
+
+/* 1544 Grid */
+@media screen and (min-width: 1900px) {
+    .mstsage-grid {
+        width: 1544px;
+    }
+    .mstsage-grid-left-rail {
+        font-size: 16px;
+        line-height: 1.313;
+        width: 295px;
+    }
+    .mstsage-grid-left-rail.no-stripe {
+        width: 295px;
+    }
+    .mstsage-grid-right-rail {
+        font-size: 14px;
+        line-height: 1.357;
+        padding: 0 27px;
+        width: 225px;
+    }
+}

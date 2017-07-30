@@ -1,0 +1,15 @@
+/*for the subheader family */
+/*all the below widths are 'grid' widths minus 12px do to the padding from the above class*/
+.subHeader.width_2{
+    width:56px;
+}
+.subHeader.width_4{
+    width:136px;
+}
+.subHeader.width_6{
+    width:216px;
+}
+.subHeader.width_6{
+    width:296px;
+}
+/*for the subheader family */

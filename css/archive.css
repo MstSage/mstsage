@@ -1,0 +1,83 @@
+/*
+Theme Name: MstSage Entertainment Theme
+Theme URI: http://www.mstsage.com
+Description: MstSage Entertainment Custom Theme
+Author: Kenneth Schuetz
+Author URI: http://www.mstsage.com
+Version: 1.0.0
+*/
+
+/* Grid*/
+@import "src/core/css/lib/grid.css";
+
+/* Util */
+@import "src/core/css/lib/util.css";
+
+/* Reset */
+@import "src/core/css/lib/reset.css";
+
+/* Fonts */
+@import "src/core/css/fonts/full-nosubset.css";
+
+/* Media Default */
+@import "src/mstsagemedia/css/default/default.css";
+
+/* Default Patterns */
+@import "src/core/css/default/patterns.css";
+	
+/* Media Patterns */
+@import "src/mstsagemedia/css/default/patterns.css";
+
+/* Media Articles */
+@import "src/mstsagemedia/css/default/articles.css";
+
+/* Blogroll */
+@import "src/core/css/widgets/global/page/blogrollarticles.css";
+
+/* List Elements Articles */
+@import "src/core/css/poilib/listElementArticleV1_5.css";
+
+/* Follow Us */
+@import "src/core/css/widgets/global/page/followus.css";
+
+/* MstSage Icon */
+@import "src/core/css/patterns/mstsage-icon.css";
+
+/* MstSage Menu */
+@import "src/core/css/patterns/mstsage-menu.css";
+
+/* MstSage Transition */
+@import "src/core/css/patterns/mstsage-transition.css";
+
+/* MstSage Buttons */
+@import "src/core/css/patterns/mstsage-button.css";
+
+/* Global Header */
+@import "src/core/css/widgets/global/page/globalheader/global_header.css";
+
+/* Section Layout */
+@import "src/core/css/widgets/global/page/globalheader/section_layout.css";
+
+/* Footer Core */
+@import "src/core/css/widgets/global/page/footer_core.css";
+
+/* MstSage Footer */
+@import "src/core/css/widgets/global/page/footer_mstsage.css";
+
+/* Poilib Base */
+@import "src/core/css/poilib/base.css";
+
+/* Hover Card */
+@import "src/core/css/widgets/global/page/hover-card.css";
+
+/* Locale Selector */
+@import "src/core/css/widgets/global/page/localeselector.css";
+
+/* Horizontal Spine */
+@import "src/core/css/widgets/global/page/spine/horizontal.css";
+
+/* Mini Controls */
+@import "src/core/css/widgets/video/sticky/mini-controls.css";
+
+/* Chesskit */
+@import "src/core/css/default/chesskit.css";

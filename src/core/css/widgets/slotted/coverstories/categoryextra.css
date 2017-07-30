@@ -1,0 +1,144 @@
+.extra-coverStories {
+    display: inline;
+    float: left;
+    margin-bottom: 12px;
+    width: 628px;
+}
+
+.extra-storyItem {
+    display: inline;
+    float: left;
+    margin: 0;
+    padding: 0 12px;
+    width: 136px;
+}
+
+.extra-storyItem.alpha {
+    padding-left: 0;
+}
+
+.extra-storyItem.omega {
+    padding-right: 0;
+}
+
+.extra-storyItem.separator {
+    border-right: 1px solid #333;
+    padding-right: 11px;
+}
+
+.extra-storyItem {
+    height: 174px;
+    overflow: hidden;
+    position: relative;
+}
+
+.extra-storyItem .story-url,
+.extra-storyItem .story-url:visited,
+.extra-storyItem .spotlight-title {
+    color: #333;
+    display: inline-block;
+    font-family: "proxima-nova-1","proxima-nova-2","helvetica neue",arial,sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.extra-storyItem .spotlight-title {
+    max-height: 70px;
+    overflow: hidden;
+}
+
+.extra-storyItem .story-url:hover {
+    color:#004D97;
+    text-decoration: none;
+}
+
+.extra-storyItem p {
+    color: #333;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 12px;
+}
+.extra-coverStories a.readMoreArrow,
+.extra-coverStories a:hover.readMoreArrow {
+    background: url('http://media.ignimgs.com/media/ign/imgs/red-arrow.png') no-repeat;
+    bottom: 0;
+    height: 18px;
+    left: 12px;
+    position: absolute;
+    text-decoration: none;
+    text-indent: -9999px;
+    width: 18px;
+}
+.extra-coverStories .alpha a.readMoreArrow,
+.extra-coverStories .alpha a:hover.readMoreArrow {
+    left: 0;
+}
+.extra-storyItem-timestamp {
+    color: #999;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+a.extra-storyItem-comments, a.extra-storyItem-comments:hover {
+    background: url('http://media.ignimgs.com/media/ign/imgs/comment-bubble.png') no-repeat left 4px;
+    color: #999;
+    display: block;
+    font-size: 11px;
+    line-height: 18px;
+    padding-left: 22px;
+    text-shadow: none;
+}
+.extra-storyItem .extra-storyItem-thumb {
+    display: inline-block;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    width: 136px;
+}
+.extra-storyItem .video-thumb:before {
+    background: transparent url('http://oystatic.ignimgs.com/src/ignmedia/img/default/videoSprites.png') 0 -350px;
+    content: '';
+    height: 20px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 20px;
+}
+.extra-storyItem .blog-thumb:before {
+    background-color: #ce2624;
+    border: 1px solid #840907;
+    bottom: 10px;
+    box-shadow: inset 0 -1px 0 #ffc5c4;
+    color: #ffc5c4;
+    content: 'Blog';
+    font-size: 10px;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+    right: -30px;
+    text-align: center;
+    text-shadow: 0 -1px 0 #840907;
+    text-transform: uppercase;
+    transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    width: 100px;
+}
+
+.extra-storyItem .branded-series {
+    border-bottom: 1px solid #bf1313;
+    bottom: 0;
+    color: #bf1313;
+    display: inline-block;
+    font-family: "ff-din-round-web-pro", sans-serif;
+    font-size: 11px;
+    height: 12px;
+    position: absolute;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+}

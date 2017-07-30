@@ -1,0 +1,120 @@
+/*
+Theme Name: MstSage Entertainment Theme
+Theme URI: http://www.mstsage.com
+Description: MstSage Entertainment Custom Theme
+Author: Kenneth Schuetz
+Author URI: http://www.mstsage.com
+Version: 1.0.0
+*/
+
+/* Grid*/
+@import "src/core/css/lib/grid.css";
+
+/* Util */
+@import "src/core/css/lib/util.css";
+
+/* Reset */
+@import "src/core/css/lib/reset.css";
+
+/* Fonts */
+@import "src/core/css/fonts/full-nosubset.css";
+
+/* Media Default */
+@import "src/mstsagemedia/css/default/default.css";
+
+/* Default Patterns */
+@import "src/core/css/default/patterns.css";
+	
+/* Media Patterns */
+@import "src/mstsagemedia/css/default/patterns.css";
+
+/* MstSage Hub */
+@import "src/mstsagemedia/sites/www.mstsage.com/css/mstsagehub.css";
+
+/* Evo CoverStorie */
+@import "src/core/css/widgets/slotted/coverstories/evo.css";
+
+/* Category Extra */
+@import "src/core/css/widgets/slotted/coverstories/categoryextra.css";
+
+/* Promo Breaking News */
+@import "src/core/css/widgets/slotted/promo/breakingnews.css";
+
+/* Blogroll */
+@import "src/core/css/widgets/global/page/blogrollarticles.css";
+
+/* List Elements Articles */
+@import "src/core/css/poilib/listElementArticleV1_5.css";
+
+/* Infeed Videos */
+@import "src/core/css/widgets/global/interrupts/infeedvideo.css";
+
+/* Deals */
+@import "src/core/css/widgets/global/interrupts/deals_core.css";
+
+/* Trending Wikis */
+@import "src/core/css/widgets/global/wikis/trendingwikis.css";
+
+/* Follow Us */
+@import "src/core/css/widgets/global/page/followus.css";
+
+/* Top Games */
+@import "src/core/css/widgets/global/page/topgames.css";
+
+/* MstSage Menu */
+@import "src/core/css/patterns/mstsage-menu.css";
+
+/* MstSage Icon */
+@import "src/core/css/patterns/mstsage-icon.css";
+
+/* MstSage Transition */
+@import "src/core/css/patterns/mstsage-transition.css";
+
+/* MstSage Buttons */
+@import "src/core/css/patterns/mstsage-button.css";
+
+/* Global Header */
+@import "src/core/css/widgets/global/page/globalheader/global_header.css";
+
+/* Section Layout */
+@import "src/core/css/widgets/global/page/globalheader/section_layout.css";
+
+/* Footer Core */
+@import "src/core/css/widgets/global/page/footer_core.css";
+
+/* MstSage Footer */
+@import "src/core/css/widgets/global/page/footer_mstsage.css";
+
+/* Poilib Base */
+@import "src/core/css/poilib/base.css";
+
+/* Poilib Sub Header Core */
+@import "src/core/css/poilib/subheader_core.css";
+
+/* Poilib Sub Header Section */
+@import "src/core/css/poilib/subheaderSection.css";
+
+/* Hover Card */
+@import "src/core/css/widgets/global/page/hover-card.css";
+
+/* Locale Selector */
+@import "src/core/css/widgets/global/page/localeselector.css";
+
+/* Horizontal Spine */
+@import "src/core/css/widgets/global/page/spine/horizontal.css";
+
+/* Video Content */
+@import "src/core/css/widgets/video/embed/content.css"
+
+/* Mini Controls */
+@import "src/core/css/widgets/video/sticky/mini-controls.css";
+
+/* Chesskit */
+@import "src/core/css/default/chesskit.css";
+
+
+/* Article Shortcode CSS */
+.mst-loader-warp {width:100%; height:100%; position:absolute;background: rgba(255, 255, 255, 0.70); text-align: center; top:0; display:none;}
+.mst-loader {width:100%; height:100%;}
+.mst-loader img.mst-loader-img{position: relative;top: 18%;}
+.inc-blogrollv2articles {position:relative;}

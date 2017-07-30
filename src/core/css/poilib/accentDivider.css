@@ -1,0 +1,10 @@
+.accentDivider {
+    background-color: #EAEAEA;
+    border-left: 100px solid #c37d13;
+    font-size: 0;
+    height: 10px;
+    line-height: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+}

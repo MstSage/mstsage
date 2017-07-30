@@ -1,0 +1,213 @@
+/* Reset for pages that decide to style directly on img tag */
+.hover-card-widget img {
+    max-width: initial;
+}
+/* end reset */
+
+.hover-card-widget {
+    background-color: #fff;
+    border: 1px solid #eee;
+    height: 280px;
+    width: 490px;
+    position: absolute;
+    z-index: 40;
+}
+
+.hover-card-widget.arrow-up:before,
+.hover-card-widget.arrow-down:after {
+    border-style: solid;
+    content: '';
+    height: 0;
+    left: 78px;
+    position: absolute;
+    width: 0;
+    z-index: -1;
+}
+
+.hover-card-widget.arrow-up:before {
+    border-color: transparent transparent #fff transparent;
+    border-width: 0 10px 10px 10px;
+    top: -9px;
+}
+
+.hover-card-widget.arrow-down:after {
+    border-color: #fff transparent transparent transparent;
+    border-width: 10px 10px 0 10px;
+    bottom: -9px;
+}
+
+.hover-card-widget .branded-playlist-art {
+    float: left;
+    height: 100%;
+    position: relative;
+    width: 176px;
+}
+
+.hover-card-widget .portrait-frame {
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.hover-card-widget .portrait-background {
+    height: 100%;
+}
+
+.hover-card-widget .show-logo {
+    max-width: 140px;
+}
+
+.hover-card-widget .art-divider {
+    bottom: 0;
+    height: 104px;
+    position: absolute;
+    width: 100%;
+}
+
+.hover-card-widget .personality-avatar {
+    border-radius: 50%;
+    border: 6px solid #252627;
+    left: 50%;
+    margin: -50px 0 0 -50px;
+    position: relative;
+    width: 88px;
+}
+
+.hover-card-widget .branded-playlist-content {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    color: #000;
+    float: left;
+    font-family: 'ars-maquette-web', sans-serif;
+    height: 100%;
+    padding: 15px;
+    position: relative;
+    width: 314px;
+    overflow: hidden;
+}
+
+.hover-card-widget .show-title,
+.hover-card-widget .personality-name {
+    color: #000;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.hover-card-widget .personality-name:after {
+    background: url(http://img.wonderhowto.com/img/original/78/11/63483737655892/0/634837376558927811.jpg);
+    background-position: 1px 1px;
+    background-size: 1em;
+    content: '';
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+}
+
+.hover-card-widget .staff-since {
+    color: #808080;
+    display: inline-block;
+    font-size: 9px;
+    font-weight: bold;
+    line-height: 8px;
+    text-transform: uppercase;
+    width: 15px;
+}
+
+.hover-card-widget .schedule-description,
+.hover-card-widget .job-title {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 18px;
+}
+
+.hover-card-widget .playlist-description {
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0;
+    max-height: 75px;
+    overflow: hidden;
+}
+
+.hover-card-widget .branded-playlist-videos {
+    bottom: 0;
+    margin: 0 0 20px 0;
+    position: absolute;
+}
+
+.hover-card-widget .branded-playlist-videos a {
+    display: inline-block;
+    float: left;
+    position: relative;
+}
+
+.hover-card-widget .branded-playlist-videos img {
+    width: 160px;
+}
+
+.hover-card-widget .latest-video:after {
+    background-color: #fff;
+    bottom: 0;
+    color: #000;
+    content: 'latest';
+    font-family: 'ff-din-round-web-pro', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    left: 0;
+    line-height: 1em;
+    padding: 7px 7px 0 0;
+    position: absolute;
+    text-transform: uppercase;
+}
+
+.hover-card-widget .see-more {
+    overflow: hidden;
+    width: 113px;
+}
+
+.hover-card-widget .see-more:before {
+    background-image: -moz-linear-gradient(right, rgba(0,0,0,1)5%, rgba(0,0,0,0));
+    background-image: -webkit-linear-gradient(right, rgba(0,0,0,1)5%, rgba(0,0,0,0));
+    background-image: linear-gradient(to left, rgba(0,0,0,1)5%, rgba(0,0,0,0));
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.hover-card-widget .see-more:after {
+    background: url(../../../../img/default/ellipsis-icon.png) no-repeat;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 25px;
+    top: 40px;
+}
+
+.hover-card-widget .branded-playlist-link {
+    color: #bf1313;
+    font-family: 'ars-maquette-web', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.hover-card-widget .branded-playlist-link:before {
+    content: '';
+    display: block;
+    height: 10px;
+    position: relative;
+    width: 100%;
+}
+
+.hover-card-widget .branded-playlist-link.icon-pointy:after {
+    background-color: #bf1313;
+    margin: 0 0 0 -2px;
+    vertical-align: -0.2em;
+}
+

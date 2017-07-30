@@ -1,0 +1,465 @@
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+}
+.clearfix:after {
+  clear: both;
+}
+.evo-coverStories{
+    display:inline;
+    float:left;
+    /*margin-left: 6px;*/
+    width:948px;
+    overflow:hidden;
+    position: relative;
+}
+.evo-coverStories .fuseNav{
+    width: 100%;
+}
+.evo-coverStories .fuseNav a{
+    display: block;
+    float: left;
+    font-family: "proxima-nova", "helvetica neue", arial, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 44px;
+    text-transform: uppercase;
+}
+.evo-coverStories .fuseNav a.active{
+    color: #CF8B14;
+}
+.evo-coverStories .fuseNav a span{
+    display: block;
+}
+.evo-coverStories .fuseNav a .text{
+    border-left: 1px solid #CCC;
+    height: 44px;
+    padding: 5px 15px 0px;
+}
+.evo-coverStories .fuseNav a.first .text{
+    border-left-width: 0px;
+}
+.evo-coverStories .fuseNav .fuse{
+    background-color: #CCC;
+    height: 5px;
+    overflow: hidden;
+}
+.evo-coverStories .fuseNav a .fuse .activeFuse{
+    background-color: #CF8B14;
+    float: right;
+    height: 5px;
+    width: 0%;
+}
+.evo-coverStories .fuseNav a.previous .fuse{
+    background-color: #333;
+}
+.evo-coverStories .fuseNav a.active .fuse .activeFuse{
+    float: left;
+}
+.evo-coverStories .fuseNav a.selected .fuse{
+    background-color: #CF8B14;
+}
+.evo-coverStories a{
+    text-decoration:none;
+    color:#000;
+}
+.evo-coverStories .prime,
+.evo-coverStories .secondary {
+    height: 263px;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    position: relative;
+    overflow: hidden;
+    background-repeat:no-repeat;
+}
+
+.evo-wrapper * {
+    -webkit-box-sizing: initial;
+    box-sizing: initial;
+}
+
+.evo-wrapper {
+    margin-left:6px;
+}
+.evo-coverStories .prime{
+    display:inline;
+    float:left;
+    margin-right:5px;
+    width:468px;
+    height: 263px;
+}
+.evo-coverStories .prime .video-overlay {
+    background: url("../../../../img/widgets/slotted/coverstories/carousel-sprite.png") no-repeat -199px -12px;
+    display: block;
+    height: 25px;
+    left: 10px;
+    position: absolute;
+    top: 231px;
+    width: 27px;
+}
+.evo-coverStories .prime .video-overlay:hover {
+    background:url(../../../../img/widgets/slotted/coverstories/carousel-sprite.png) no-repeat -250px -12px;
+    display: block;
+    height: 25px;
+    left: 10px;
+    position: absolute;
+    top: 231px;
+    width: 27px;
+}
+.evo-coverStories a.prime:link, .evo-coverStories a.prime:visited {
+    color:#e6e6e6;
+}
+.evo-coverStories a.prime:hover, .evo-coverStories a.prime:active {
+    color:#fff;
+}
+.evo-coverStories .wide .video-overlay {
+    background: url("../../../../img/widgets/slotted/coverstories/carousel-sprite.png") no-repeat -7px -14px;
+    display: block;
+    height: 64px;
+    left: 10px;
+    position: absolute;
+    top: 183px;
+    width: 76px;
+}
+.evo-coverStories .wide .video-overlay:hover {
+    background:url(../../../../img/widgets/slotted/coverstories/carousel-sprite.png) no-repeat -101px -14px;
+    display: block;
+    height: 64px;
+    left: 10px;
+    position: absolute;
+    top: 183px;
+    width: 76px;
+}
+.evo-coverStories .secondary {
+    display:inline;
+    float:left;
+    margin:0 6px 0 6px;
+    padding-top:140px;
+    width:245px;
+    height:123px;
+    font-size:18px;
+    background-repeat: no-repeat;
+    background-size: 245px 138px;
+}
+.evo-coverStories .secondary .video-overlay {
+    background: url("../../../../img/widgets/slotted/coverstories/carousel-sprite.png") no-repeat -200px -12px;
+    display: block;
+    height: 25px;
+    left: 7px;
+    position: absolute;
+    top: 95px;
+    width: 27px;
+}
+.evo-coverStories .secondary .video-overlay:hover {
+    background:url(../../../../img/widgets/slotted/coverstories/carousel-sprite.png) no-repeat -251px -12px;
+    display: block;
+    height: 25px;
+    left: 7px;
+    position: absolute;
+    top: 95px;
+    width: 27px;
+}
+.evo-coverStories a.secondary:link, .evo-coverStories a.secondary:visited{
+    color:#000;
+}
+.evo-coverStories a.secondary:hover, .evo-coverStories a.secondary:active{
+    color:#003399;
+}
+.evo-coverStories .secondary.omega{
+    margin-right: 0;
+    margin-left: 6px;
+}
+
+.evo-coverStories .overlayBackground,
+.evo-coverStories .overlayContent{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width:250px;
+    height:135px;
+    display:inline;
+    float:left;
+    margin:0;
+}
+.evo-coverStories .carousel {
+    height: 280px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    width: 948px;
+    transition: height 0.3s ease-out 0s;
+    -moz-transition: height 0.3s ease-out 0s;
+    -o-transition: height 0.3s ease-out 0s;
+    -webkit-transition: height 0.3s ease-out 0s;
+}
+.evo-coverStories .carousel .storyUnit {
+    height: 280px;
+    list-style: none;
+    position: absolute;
+    top: -280px;
+    transition: top 0.3s ease-out 0.3s;
+    -moz-transition: top 0.3s ease-out 0.3s;
+    -o-transition: top 0.3s ease-out 0.3s;
+    -webkit-transition: top 0.3s ease-out 0.3s;
+    width: 948px;
+    z-index: 1;
+}
+.evo-coverStories .carousel .storyUnit.active{
+    top: 0px;
+    transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    -webkit-transition-delay: 0s;
+    z-index: 2;
+}
+.evo-coverStories .overlayBackground{
+    background: #000;
+    opacity: .75;
+}
+.overlayContent span{
+    display:block;
+    margin: 0;
+}
+.lcs-headline, .lcs-headline a {
+    font-family: "proxima-nova", "helvetica neue", arial, sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    line-height: 25px;
+}
+.cvr-headline {
+    color: #fff;
+}
+.lcs-teaser{
+    color: #fff;
+    font-family: "proxima-nova", "helvetica neue", arial, sans-serif;
+    font-size: 13px;
+    margin-top: 5px;
+}
+.cvr-highlightsSubTitle {
+    color: #fff;
+    font-family: "proxima-nova", "helvetica neue", arial, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+.cvr-highlights {
+    height: 210px;
+    padding: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 248px;
+    z-index: 6;
+    background: rgb(0,0,0);
+    background: rgba(0,0,0, 0.75);
+    overflow: hidden;
+}
+.cvr-highlights a, .cvr-highlights {
+    /* using rgba so that it will not do strange things when animated */
+    color: rgb(255,255,255);
+    color: rgba(255,255,255,1);
+}
+.evo-coverStories-subitems {
+    color: #CF8B14;
+}
+.evo-coverStories-subitems ul{
+    list-style: none outside;
+}
+.evo-coverStories-subitems li{
+    margin: 4px 0px;
+    list-style: none outside;
+}
+.evo-coverStories-subitems a{
+    clear: right;
+    /* using rgba so that it will not do strange things when animated. hex is for IE9. */
+    color: rgb(204,204,204);
+    color: rgba(204,204,204,1);
+    color: #ccc;
+    display: block;
+    font-family: "proxima-nova", "helvetica neue", arial, sans-serif;
+    font-size: 13px;
+    left: 3px;
+    line-height: 15px;
+    margin-left: 7px;
+    position: relative;
+}
+.evo-coverStories-subitems a:hover{
+    color: #fff;
+}
+.cvr-main {
+    position: relative;
+    height:270px;
+}
+.cvr-main img {
+    max-height: 270px;
+}
+.overlayContent .lcs-headline{
+    margin: 6px 12px 6px 12px;
+}
+.overlayContent .lcs-subheadline{
+    margin: 0px 12px 0px 12px;
+}
+.evo-coverStories .readMoreArrow{
+    color: #fff;
+    text-decoration: none;
+    text-indent:-9999px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 18px;
+    display:block;
+    width:18px;
+    background-image:url('../../../../../mstsagemedia/img/default/evolution-icons.png');
+    background-position:0 -40px;
+    background-repeat:no-repeat;
+}
+.overlayContent .readMoreArrow{
+    left: 12px;
+    bottom: 6px;
+}
+
+.evo-coverStories .wide li:before {
+    clear: left;
+    content: "\00BB";
+    float: left;
+    line-height: 12px;
+}
+
+.evo-coverStories .bottom-bumper {
+    background-color: #000;
+    height: 20px;
+    position: absolute;
+    right: -308px;
+    top: 256px;
+    width: 308px;
+}
+
+.evo-coverStories .live-video-container {
+    background-color: #000;
+    display: block;
+    height: 360px;
+    position:relative;
+    top: 0;
+    width: 640px;
+    transition: top 0.3s ease-out 0s;
+    -moz-transition: top 0.3s ease-out 0s;
+    -o-transition: top 0.3s ease-out 0s;
+    -webkit-transition: top 0.3s ease-out 0s;
+}
+
+.evo-coverStories .live-video-container.hidden {
+    top: -180px;
+}
+
+.evo-coverStories .live-video-container .video_embed_content-widget {
+    min-height: 360px;
+}
+
+.evo-coverStories .carousel.live-video {
+    height: 530px;
+}
+
+.evo-coverStories .video-container {
+    height: 360px;
+    width: 640px;
+}
+
+.evo-coverStories .cvr-main.live-video {
+    background-color: #000;
+}
+
+.coverStoriesShift {
+    position: relative;
+    transition: top 0.3s ease-out 0s;
+    -moz-transition: top 0.3s ease-out 0s;
+    -o-transition: top 0.3s ease-out 0s;
+    -webkit-transition: top 0.3s ease-out 0s;
+}
+
+.coverStoriesShift.move-up {
+    top: -250px;
+}
+
+.main-column-content {
+    position: relative;
+    transition: top 0.3s ease-out 0s;
+    -moz-transition: top 0.3s ease-out 0s;
+    -o-transition: top 0.3s ease-out 0s;
+    -webkit-transition: top 0.3s ease-out 0s;
+}
+
+.main-column-content.move-up {
+    position: relative;
+    top: -160px;
+}
+
+.evo-coverStories .image-gradient {
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%); /* FF3.6+ */
+    background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.6) 100%); /* IE10+ */
+    background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.6) 100%); /* Opera 11.10+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.6))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.6) 100%); /* Chrome10+,Safari5.1+ */
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.6) 100%); /* W3C */
+    bottom: 0;
+    float: left;
+    height: 115px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.evo-coverStories .watch-read {
+    bottom: 25px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: white;
+    font-size: 16px;
+    height: 50px;
+    left: 0;
+    margin-left: 25px;
+    padding: 17px 0 0 62px;
+    position: absolute;
+    width: 120px;
+}
+
+.evo-coverStories .carousel .cvr-main .watch-read.read {
+    left: 790px;
+}
+
+.evo-coverStories .watch-read.watch {
+    background: url(../../../../../mstsagemedia/img/default/icon-watch.png) no-repeat 0px center;
+}
+
+.evo-coverStories .watch-read.watch:hover {
+    background-image: url(../../../../../mstsagemedia/img/default/icon-watch-over.png);
+}
+
+.evo-coverStories .watch-read.read {
+    background: url(../../../../../mstsagemedia/img/default/icon-read.png) no-repeat 0px center;
+}
+
+.evo-coverStories .watch-read.read:hover {
+    background-image: url(../../../../../mstsagemedia/img/default/icon-read-over.png);
+}
+
+.evo-coverStories .carousel .cvr-main .show-logo-link {
+    height: 100px;
+    left: 0;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    width: 250px;
+}
+
+.evo-coverStories .carousel .cvr-main .show-logo {
+    max-height: 100px;
+    max-width: 250px;
+}

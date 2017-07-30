@@ -1,0 +1,50 @@
+/**
+ * Modal
+ */
+.mstsage-modal {
+    background-color: rgba(0,0,0,0.85);
+    cursor: default;
+    display: block;
+    height: 100%;
+    left: 0;
+    overflow-y: scroll;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5001;
+}
+
+html.disable-scroll {
+    overflow: hidden!important;
+}
+
+.parked-view {
+    position: fixed !important;
+    width: 100%;
+}
+
+.parked-view.parked-screen:after {
+  content: "";
+  position: fixed;
+  background: rgba( 0,0,0,0.8);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 6000;
+}
+
+/**
+ * Video
+ *
+ */
+.video {
+    box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;
+    position: relative;
+}
+
+.video:after {
+    /* needs gradient and opacity rules */
+    background: url(); /*put default play button in here*/
+    width: 100%;
+}

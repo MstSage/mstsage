@@ -1,0 +1,102 @@
+/* SLIP theme */
+#me-commerce-commerce span { /* reset */
+    overflow: visible;
+}
+
+#me-commerce-commerce .product-link-slip {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: ars-maquette-web, sans-serif;
+    font-size: 14px;
+    line-height: 1em;
+    margin: 34px 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+
+#me-commerce-commerce .product-image {
+    height: 150px;
+    margin: 0 25px 0 0;
+}
+
+#me-commerce-commerce .product-image img {
+    height: 100%;
+}
+
+#me-commerce-commerce .product-details {
+    flex: 1 0 0;
+}
+
+#me-commerce-commerce .product-name {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1em;
+    margin: 10px 0 9px 0;
+}
+
+#me-commerce-commerce .product-description {
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    font-size: 14px;
+    height: 4.05em;
+    line-height: 1.35em;
+    overflow: hidden;
+}
+
+#me-commerce-commerce .mecse-details {
+    align-items: center;
+    display: flex;
+    margin: 29px 0 15px 0;
+}
+
+#me-commerce-commerce .product-link {
+    background-image: none;
+    font-weight: 700;
+}
+
+#me-commerce-commerce .product-link:hover {
+    text-decoration: none;
+}
+
+#me-commerce-commerce .get-deal-button {
+    background-color: #bf1313;
+    border-radius: 50px;
+    color: #fff;
+    padding: 14px 30px;
+}
+
+#me-commerce-commerce .product-link::after {
+    color: #bf1313;
+    content: ' ' attr(data-commerce-price);
+    font-family: ff-din-round-web-pro, sans-serif;
+    font-size: 22px;
+    line-height: 18px;
+    position: absolute;
+    right: -135px;
+    width: 120px;
+}
+
+#me-commerce-commerce .product-platform {
+    color: #bf1313;
+    flex: 1 0 auto;
+    font-family: ff-din-round-web-pro, sans-serif;
+    text-align: right;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+#me-commerce-commerce .slip-footnote {
+    border-top: 1px solid #ccc;
+    color: #97a0a8;
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 15px;
+    padding: 15px 0 0 0;
+    width: 100%;
+}
+
+.me-commerce-slip {
+    overflow: hidden;
+}

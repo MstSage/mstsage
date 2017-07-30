@@ -1,0 +1,21 @@
+#me-commerce-commerce .mecse {
+    color: #a8a8a8;
+    max-height: 14px;
+    overflow: hidden;
+    padding: 7px 6px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#me-commerce-commerce span {
+    overflow: hidden;
+}
+
+#me-commerce-commerce .bestDeal {
+    color: #c44d3c;
+}
+
+#me-commerce-commerce .displayPrice {
+    color: #FFF;
+    margin-left: 3px;
+}

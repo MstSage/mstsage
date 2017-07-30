@@ -1,0 +1,159 @@
+.article_topBorder {
+    background: none repeat scroll 0 0 #333333;
+    height: 10px;
+    margin: 0 0 12px 0;
+}
+
+.article_title {
+	font-family: "proxima nova", "proxima-nova-1","proxima-nova-2","helvetica neue",arial,sans-serif;
+    color: #333333;
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 36px;
+    margin: 0;
+}
+
+.article_subtitle {
+    color: #999999;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 22px;
+    margin: 0;
+}
+
+.article_headlineContainer {
+    border-bottom: 1px solid #000000;
+    margin: 0 6px 12px 18px;
+    padding-bottom: 12px;
+}
+
+.article_headlineContainer .edit-link {
+  font-size: 12px;
+}
+
+.article_byLine {
+    margin: 0 auto 12px 12px;
+}
+
+.article_author {
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 24px;
+    padding-top: 3px;
+}
+
+.article_pub_date {
+    color: #999999;
+    float: left;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 24px;
+    margin-left: 10px;
+    padding-top: 3px;
+    text-transform: uppercase;
+}
+
+.article_shareThis {
+    float: right;
+    padding-top: 3px;
+}
+
+.article_divider {
+    border-top: 1px dashed #A6A6A6;
+    clear: both;
+    margin: 0 0 12px 12px;
+}
+
+
+.article_content {
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 12px;
+    padding-bottom: 12px;
+}
+
+.article_content h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 2px;
+}
+
+.article_pager {
+    padding-bottom: 12px;
+    margin-left: 18px;
+}
+
+#recirculation_module {
+    clear: both;
+}
+
+.article_halfwidth {
+    float:left;
+    width: 50%;
+}
+
+.aligncenter{
+    text-align: center;
+    margin: auto;
+}
+
+img.aligncenter {
+    display:block;
+}
+
+.alignleft {
+    float: left;
+    margin-right: 12px;
+}
+
+.alignright {
+    float: right;
+    margin-left: 12px;
+}
+
+.youtube-player {
+    margin: 0 auto 18px auto;
+}
+
+.mstsage-videoplayer, .video_embed_content-widget {
+       margin: 0 auto 18px auto;
+}
+
+/* inline comment ad */
+#sugarad-side300x250 {float:left; margin-top:50px;}
+.popularArticles, .vidPlayListContainer {width: 308px; float:right}
+
+#article_comments {
+    clear:both;
+}
+
+.rightrail_module h2 {
+    font-size: 100%;
+    /*line-height: 50%;*/
+}
+
+.articleVerdictHeader {
+    border-bottom: 1px solid #E0E0E0;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    padding: 0 0 2px;
+    text-transform: uppercase;
+}
+
+.articleVerdictText {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 28px;
+}
+.wp-caption-text {
+    font-size: 14px;
+    font-style: italic;
+}
+
+/* ShareThis widget */
+.shareThisContainer {
+    margin: 78px 20px 20px -736px;
+    position: absolute;
+}

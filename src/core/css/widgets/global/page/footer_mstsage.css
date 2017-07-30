@@ -1,0 +1,83 @@
+#mstsageFooter-container {
+    background:url("../../../../img/widgets/global/page/footer_bg.png") repeat-x scroll 0 0 #b62106;/*for non moz|webkit browsers*/
+    background-size: auto 100%; /* for CSS3 browsers */
+    background: -moz-linear-gradient(100% 100% 90deg, #b62106, #720e00);
+    background: -webkit-gradient(linear, left top, left bottom, from(#720e00), to(#b62106));
+    padding: 12px;
+}
+#mstsageFooter-container,
+#mstsageFooter-container p,
+#mstsageFooter-container a {
+    color: #fff;
+}
+#mstsageFooter-container a:link,
+#mstsageFooter-container a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+#mstsageFooter-container a:hover,
+#mstsageFooter-container a:active {
+    color: #fff;
+    text-decoration: underline;
+}
+.mstsageFooter-linkList li {
+    border-right:1px solid #fff;
+}
+.mstsageFooter-topRow {
+    background:url("../../../../img/widgets/global/page/footer_rpt_top.png") repeat-x scroll 0 0 #560b00;
+    background-size: auto 100%; /* for CSS3 browsers */
+    background: -moz-linear-gradient(100% 100% 90deg, #510b00, #4e0a00);
+    background: -webkit-gradient(linear, left top, left bottom, from(#4e0a00), to(#560b00));
+}
+.mstsageFooter-bottomRow {
+    background:url("../../../../img/widgets/global/page/footer_rpt_r.jpg") repeat-x scroll 0 0 #8e1500;
+    background-size: auto 100%; /* for CSS3 browsers */
+    background: -moz-linear-gradient(100% 100% 90deg, #8e1500, #5d0b00);
+    background: -webkit-gradient(linear, left top, left bottom, from(#5d0b00), to(#8e1500));
+}
+#mstsageFooter-container .mstsageFooter-newsletterSignup {
+  margin-top: -5px;
+}
+#mstsageFooter-container .mstsageFooter-newsletterSignup label {
+    display: block;
+    margin: 0 0 5px 0;
+    font-size: 12px;
+}
+#mstsageFooter-container .mstsageFooter-newsletterSignup input.emailInput {
+    width: 215px;
+    height: 19px;
+    line-height: 19px;
+    margin: 0 5px 0 0;
+    padding: 0 5px;
+    font-size: 12px;
+    color: #666;
+    border: none;
+}
+#mstsageFooter-container .mstsageFooter-newsletterSignup input.emailSubmit {
+    display: inline-block;
+    width: 68px;
+    height: 24px;
+    line-height: 20px;
+    font-size: 11px;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    background: url("../../../../img/widgets/global/page/mstsage_footer_newsletter_submit.png");
+}
+
+#mstsageFooter-container #mstsageFooter-adchoices {
+    position: relative;
+    top: -2px;
+}
+
+#mstsageFooter-container #mstsageFooter-adchoices img {
+    vertical-align: middle;
+}
+
+#mstsageFooter-container #teconsent-container #consent_blackbar {
+    bottom:48px;
+    left:0;
+    position:fixed;
+    width:100%;
+    z-index:999999;
+}

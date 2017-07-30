@@ -1,0 +1,57 @@
+/* start
+======================================================== ad css */
+.mstsage-grid-preshell .king,
+.mstsage-content .rook {
+    box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;
+    float: left;
+    padding-top: 12px;
+    text-align: center;
+}
+
+.ad_placement.ad_leaderboard {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ad-placement.ad-leaderboard {
+    text-align: center;
+    width: 100%;
+}
+
+.ad_placement .img_label {
+    float: right;
+    position: relative;
+    bottom: -178px;
+}
+
+/* end
+======================================================== ad css */
+
+
+/* temp ad include */
+.bigBangOverlayOverlayClose, .bigBangOverlayClose {
+    display: block;
+    width: 45px;
+    height: 45px;
+    border-radius: 66px;
+    font-size: 25px;
+    color: #fff;
+    line-height: 41px;
+    text-align: center;
+    text-decoration: none;
+    background: #000;
+    opacity: 1;
+    font-weight: bold;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #424242;
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    cursor: pointer;
+}
+
+.bigBangOverlayOverlayClose:hover, .bigBangOverlayClose:hover {
+    background: #fff;
+    color: #000;
+}

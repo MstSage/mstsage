@@ -1,0 +1,51 @@
+/*
+Rules for LiveFyre image and video embeds
+Primary LiveFyre styles: desktop.css, mobile.css
+*/
+    #livefyre-comment .fyre-comment-media .fyre-comment-media-expanded img {
+        height: initial;
+        max-height: initial!important;
+        width: initial;
+        max-width: 100%!important;
+    }
+
+    #livefyre-comment .fyre-comment-media .fyre-comment-media-link {
+        height: 0;
+        overflow: hidden;
+        padding-bottom: 56%;
+        position: relative;
+        width: 100%;
+    }
+
+    #livefyre-comment .fyre-comment-media .fyre-comment-media-title {
+        background: rgba(0,0,0,0.8);
+        box-sizing: border-box;
+        color: #ffffff;
+        display: block;
+        left: 0;
+        overflow: hidden;
+        padding: 0.5em 1em;
+        text-overflow: ellipsis;
+        top: 0;
+        white-space: nowrap;
+        width: 100%;
+        z-index: 1;
+    }
+
+    #livefyre-comment .fyre-comment-media .fyre-comment-media-link .fyre-comment-media-img {
+        bottom: 0;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+
+    /* Editor */
+    #livefyre-comment .fyre-editor .fyre-editor-media-drawer {
+        border-color: #c2c2c2;
+    }
+
+    #livefyre-comment .fyre-editor.focused .fyre-editor-media-drawer {
+        border-color: #bf1313;
+        border-bottom-color: #c2c2c2;
+    }

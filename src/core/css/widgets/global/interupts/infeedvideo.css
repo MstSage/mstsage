@@ -1,0 +1,174 @@
+#in-feed-video {
+  height: 645px;
+  width: 628px;
+  position: relative;
+  background-color: #252627;
+}
+
+#in-feed-video .video-container {
+  height: 353px;
+  position: relative;
+  padding-bottom: 14px;
+}
+
+#in-feed-video .disclosure {
+  height: 22px;
+  padding: 0px 20px;
+}
+
+#in-feed-video .disclosure .disclosure-text,
+#in-feed-video .disclosure .promoted {
+  position: relative;
+  color: #888;
+}
+
+#in-feed-video .disclosure .disclosure-text {
+  font: bold 13px 'ff-din-round-web-pro', sans-serif;
+  text-transform: uppercase;
+  float: left;
+}
+
+#in-feed-video .disclosure .promoted {
+  background: url(../../../../img/widgets/global/interrupts/question_mark_sponsored.svg) center center no-repeat;
+  height: 21px;
+  width: 21px;
+  cursor: pointer;
+  float: right;
+}
+
+#in-feed-video .description {
+  height: 118px;
+  width: 550px;
+  margin: 0;
+  padding: 0 20px;
+}
+
+#in-feed-video .description h4 {
+  font: bold 17px 'ars-maquette-web', sans-serif;
+  color: #fff;
+  padding-bottom: 8px;
+}
+
+#in-feed-video .description p {
+  font: normal 14px 'ars-maquette-web', sans-serif;
+  line-height: 19px;
+  height: 56px;
+  overflow: hidden;
+  color: #ddd;
+}
+
+#in-feed-video .thumbs {
+  height: 164px;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+#in-feed-video .thumbs .thumb-item {
+  display: block;
+  float: left;
+  width: 134px;
+  height: 100%;
+  padding-right: 17.3px;
+}
+
+#in-feed-video .thumbs .thumb-item:nth-child(4) {
+  padding-right: 0px;
+}
+
+#in-feed-video .thumbs .thumb-item img {
+  width: 134px;
+  height: 76px;
+  margin: 0;
+  padding: 0;
+}
+
+#in-feed-video .thumbs .thumb-item .thumb-description {
+  font: normal 14px 'ars-maquette-web', sans-serif;
+  color: #b8bbbf;
+  line-height: 19px;
+  height: 28px;
+  padding: 10px 0px;
+  overflow: hidden;
+}
+
+#in-feed-video .thumbs .thumb-item:hover {
+  cursor: pointer;
+}
+
+#in-feed-video .thumbs .thumb-item:hover .thumb-description {
+  color: #fff;
+}
+
+#in-feed-video .muted-autoplay {
+    cursor: pointer;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    top: 0px;
+    left: 0px;
+}
+
+#in-feed-video .throbber {
+  height: 20px;
+  width: 30px;
+  position: absolute;
+  bottom: 34px;
+  right: 15px;
+}
+
+#in-feed-video .throbber .pulsar {
+  display: inline-block;
+  position: absolute;
+  bottom: 0px;
+  width: 4px;
+  background-color: #fff;
+}
+
+#in-feed-video .pulsar:nth-child(1) {
+  animation: 750ms linear -.2s infinite alternate first-ani;
+  left: 2px;
+}
+
+#in-feed-video .pulsar:nth-child(2) {
+  animation: 375ms linear 0s infinite alternate second-ani;
+  left: 8px;
+}
+
+#in-feed-video .pulsar:nth-child(3) {
+  animation: 375ms linear -.5s infinite alternate third-ani;
+  left: 14px;
+}
+
+@keyframes first-ani {
+  0% {
+    height:4px;
+  }
+  33% {
+    height:12px;
+  }
+  66% {
+    height:8px;
+  }
+  100% {
+    height:12px;
+  }
+}
+
+@keyframes second-ani {
+  from {
+    height:6px;
+  }
+  to {
+    height:14px;
+  }
+}
+
+@keyframes third-ani {
+  from {
+    height:5px;
+  }
+  to {
+    height:11px;
+  }
+}

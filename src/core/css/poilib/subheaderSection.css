@@ -1,0 +1,28 @@
+.subHeaderSectionContainer {
+	border-top:1px #d3222a solid;
+	background:url('http://media.ignimgs.com/media/ign/imgs/red_diagonal_repeat.png');
+	height:25px;
+	line-height:25px;
+	margin:0 0 12px;
+}
+.subHeaderSection h2 {
+    border: 0 none;
+   	font-weight: bold;
+   	font-size: 12px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height:25px;
+   	vertical-align: baseline;
+    padding: 0;
+    margin: 0;
+}
+.subHeaderSection {
+	display:inline-block;
+	background-color:#d3222a;
+	height:25px;
+	line-height:25px;
+	font-size:12px;
+	font-weight:bold;
+	color:#fff;
+	padding:0 12px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}

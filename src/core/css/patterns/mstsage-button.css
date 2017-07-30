@@ -1,0 +1,27 @@
+.mstsage-button {
+    background-color: transparent;
+    border-radius: 2em;
+    border: 1px solid currentColor;
+    color: #97a0a8;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'ars-maquette-web', sans-serif;
+    font-size: 1em;
+    line-height: 1em;
+    padding: 0.77em 1.355em 0.785em 1.355em;
+    user-select: none; 
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+    white-space: nowrap;
+}
+
+.mstsage-button:hover {
+    color: #fff;
+    border-color: #bf1313;
+    background-color: #bf1313;
+}
+
+.mstsage-button.compact {
+    padding: 0.571em 1.14em 0.571em 1.14em;
+}

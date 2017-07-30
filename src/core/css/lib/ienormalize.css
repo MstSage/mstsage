@@ -1,0 +1,64 @@
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ */
+
+audio,
+canvas,
+progress,
+video {
+    display: inline-block; /* 1 */
+}
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+    background: transparent;
+}
+
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+
+img {
+    border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10.
+ */
+
+button {
+    overflow: visible;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ */
+
+legend {
+    border: 0; /* 1 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9.
+ */
+
+textarea {
+    overflow: auto;
+}

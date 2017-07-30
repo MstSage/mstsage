@@ -1,0 +1,118 @@
+#mstsageFooter-container,
+#mstsageFooter-container p,
+#mstsageFooter-container a {
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 10px;
+    line-height: 13px;
+}
+#mstsageFooter-container p {
+    margin:0 0 12px 0;
+    padding:0;
+}
+#mstsageFooter-container a {
+    outline: 0;
+}
+#mstsageFooter-container img {
+    border:none;
+}
+#mstsageFooter-container li,
+#mstsageFooter-container li a {
+    display:inline-block;
+    line-height: 10px;
+}
+#mstsageFooter-container ul {
+    padding: 0;
+    margin: 0;
+}
+#mstsageFooter-container .first {
+    border: none;
+}
+.mstsageFooter-content {
+    width:952px;
+    margin: 0 auto;
+}
+.mstsageFooter-linkList {
+    clear: both;
+    display: block;
+}
+.mstsageFooter-linkList li {
+    float:left;
+    padding:0 5px 0 0;
+    border-right:1px solid #fff;
+    margin:0 6px 9px 0;
+    white-space: nowrap;
+}
+.mstsageFooter-linkList li:last-child {
+    border: none;
+}
+.mstsageFooter-linkList .showBorder {
+    border-right: 1px solid #fff;
+    margin-right: -6px;
+    padding-right: 6px;
+}
+.mstsageFooter-content li {
+    padding:0 6px 0 0;
+    border: none;
+}
+.mstsageFooter-topRow {
+    overflow: hidden;
+    margin-bottom: 12px;
+    padding:6px 12px 0;
+}
+.mstsageFooter-column {
+    width: 464px;
+    float: left;
+    padding:6px 0px;
+}
+.mstsageFooter-columnLeft {
+    width: 560px;
+    float: left;
+    padding:6px 0px;
+}
+.mstsageFooter-columnRight {
+    width: 368px;
+    float: left;
+    padding:6px 0px;
+    text-align:center;
+}
+.mstsageFooter-bottomRow {
+    overflow: visible;
+    padding:6px 12px 0;
+    height:86px;
+}
+.mstsageFooter-bottomRowCompact {
+    height:74px;
+}
+.mstsageFooter-bottomRowTall {
+    height:104px;
+}
+.mstsageFooter-logo {
+    display: inline-block;
+    float:left;
+    margin-bottom:12px;
+}
+.mstsageFooter-logo:after {
+    background-image: url(src/core/img/widgets/global/page/footer/globalfooter-sprite.png);
+    background-position: 0px 2px;
+    background-repeat: no-repeat;
+    content: ' ';
+    display: block;
+    height: 28px;
+    width: 65px;
+}
+.mstsageFooter-truste {
+    float: right;
+    margin: 0 92px 3px 0;
+}
+.mstsageFooter-linkRss {
+    display:inline-block;
+    height:12px;
+}
+
+#mstsageFooter-container #consent_blackbar{
+    bottom:48px;
+    left:0;
+    position:fixed;
+    width:100%;
+    z-index:999999;
+}

@@ -1,0 +1,127 @@
+.social-share-container.hidden {
+    display: none;
+}
+
+.social-share-container .button-close {
+    box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
+    height: 1.8em;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1.3em;
+}
+
+.social-share-container .social-buttons-container {
+    margin: 15em auto 0;
+    width: 55em;
+}
+
+.social-share-container .social-count {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    color: white;
+    font-family: 'ff-din-round-web-pro', sans-serif;
+    font-size: 1.7em;
+    margin-left: 50%;
+    padding: 0.35em 0em 0em 0.5em;
+    text-rendering: optimizeLegibility;
+}
+
+.social-share-container .social-caption {
+    color: white;
+    font-size: 1.5em;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+/* Social Button styles*/
+.social-share-container .social-button {
+    border-radius: 3.5em;
+    border: 2px solid white;
+    box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
+    float: left;
+    margin: 1%;
+    padding: 1.7em 1em 1em 1em;
+    position: relative;
+    transition: all 0.1s; -moz-transition: all 0.1s; -ms-transition: all 0.1s; -webkit-transition: all 0.1s;
+    width: 23%;
+}
+
+.social-share-container .social-button:hover {
+    cursor: pointer;
+}
+
+.social-share-container .social-button.facebook:hover {
+    background: #405d94;
+    border-color: #405d94;
+}
+
+.social-share-container .social-button.twitter:hover {
+    background: #4aade8;
+    border-color: #4aade8;
+}
+
+.social-share-container .social-button.reddit:hover {
+    background: #3e6895;
+    border-color: #3e6895;
+}
+
+.social-share-container .social-button.google-plus:hover {
+    background: #cb5a45;
+    border-color: #cb5a45;
+}
+
+/* Share button labels */
+.social-share-container .social-button:after {
+    color: white;
+    content: ' ';
+    display: block;
+    font-family: 'ff-din-round-web-pro', sans-serif;
+    font-size: 0.8em;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 7em;
+    width: 85%;
+}
+
+.social-share-container .social-button.facebook:after {
+    content: 'share';
+}
+
+.social-share-container .social-button.twitter:after {
+    content: 'tweet';
+}
+
+.social-share-container .social-button.reddit:after {
+    content: 'submit';
+}
+
+.social-share-container .social-button.google-plus:after {
+    content: '+1';
+}
+
+/* Share Arrow styles */
+.social-share-container .social-button .icon.icon-sharrow {
+    display: inline-block;
+    font-size: 4em;
+    left: 1em;
+    position: absolute;
+    top: 0.1em;
+}
+
+.social-share-container .social-button.facebook .icon.icon-sharrow {
+    background-position: 4em;
+}
+
+.social-share-container .social-button.twitter .icon.icon-sharrow {
+    background-position: 3em;
+}
+
+.social-share-container .social-button.reddit .icon.icon-sharrow {
+    background-position: 2em;
+}
+
+.social-share-container .social-button.google-plus .icon.icon-sharrow {
+    background-position: 1em;
+}

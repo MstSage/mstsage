@@ -1,0 +1,183 @@
+/* PATTERNS */
+/* MstSage modal*/
+#header-container .mstsage-modal {
+    background-color: rgba(0,0,0,0.85);
+    cursor: default;
+    display: block;
+    height: 100%;
+    left: 0;
+    overflow-y: scroll;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5001;
+}
+
+/* Close button */
+.mstsage-modal .button-close {
+    color: rgba(255,255,255,0.5);
+    font-family: 'ff-din-round-web-pro', sans-serif;
+    font-size: 64px;
+    line-height: 48px;
+    padding: 24px;
+    text-stroke: 3px #242424; -webkit-text-stroke: 3px #242424;
+}
+
+.mstsage-modal .button-close:after {
+    content: "ESC";
+    display: block;
+    font-size: 0.8rem;
+    line-height: 1.0rem;
+    text-align: center;
+    text-stroke: 0; -webkit-text-stroke: 0;
+}
+
+.mstsage-modal .button-close:hover {
+    color: white;
+    cursor: pointer;
+}
+/* END PATTERNS */
+
+/* Locale Selector */
+.locale-selector-container {
+    height: 0;
+    width: 0;
+}
+
+.locale-selector-container a,
+.locale-selector-container a:visited,
+.locale-selector-container span {
+    color: #fff;
+}
+
+.locale-selector-container .mstsage-modal.hidden,
+#header-container .locale-selector-container .mstsage-modal.hidden {
+    display: none;
+}
+
+.locale-selector-container .locale-shortcode {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'ff-din-round-web-pro', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+
+.locale-selector-container .locale-dropdown-bg {
+    background-color: rgba(0,0,0,0.8);
+    cursor: default;
+    display: block;
+    height: 100%;
+    left: 0%;
+    overflow-y: scroll;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+}
+
+#locale-selector-container.locale-selector-container .locale-dropdown {
+    background: #252627;
+    float: left;
+    padding: 40px 30px;
+    position: relative;
+    width: 200px;
+    z-index: 1;
+}
+
+.locale-selector-container .locale-dropdown li {
+    clear: both;
+    float: left;
+    width: 100%;
+}
+
+.locale-selector-container .locale-dropdown a:hover span {
+    color: #f7f6f6;
+}
+
+.locale-selector-container .locale-dropdown-container {
+    margin: 0 auto;
+    padding: 0px 132px;
+    position: relative;
+    width: 693px;
+    z-index: 1;
+}
+.locale-selector-container .button-close {
+    position: fixed;
+    right: 30px;
+    top: 0;
+}
+
+.locale-selector-container .locale-primary,
+.locale-selector-container .locale-secondary {
+    display: block;
+    position: relative;
+}
+
+.locale-selector-container .locale-primary:hover:after,
+.locale-selector-container .locale-secondary:hover:after {
+    background: #d3222a;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    right: -30px;
+    top: 0;
+    width: 9px;
+}
+
+.locale-selector-container .locale-code,
+.locale-selector-container .locale-region,
+.locale-selector-container .locale-region-divider {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: "ff-din-round-web-pro", sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 35px;
+    text-transform: uppercase;
+}
+
+.locale-selector-container .locale-code {
+    float: left;
+}
+
+.locale-selector-container .locale-region,
+.locale-selector-container a.locale-region {
+    color: #9aa0a8;
+    float: right;
+}
+
+.locale-selector-container .locale-region-divider {
+    color: #616366;
+    float: right;
+    white-space: pre;
+}
+
+.locale-selector-container a.locale-region:hover {
+    color: #f7f6f6;
+}
+
+.locale-selector-container .locale-primary .locale-code {
+    font-size: 26px;
+}
+
+.locale-selector-container .locale-world-mstsage .locale-region {
+    color: #ffffff;
+    white-space: pre;
+}
+.locale-selector-container .locale-world-mstsage a.locale-region:hover {
+    text-decoration: underline!important;
+}
+
+.locale-selector-container .locale-dropdown-label {
+    color: #616366;
+    font-family: 'ff-din-round-web-pro', sans-serif;
+    font-size: 11px;
+    font-weight: 800;
+    padding: 35px 0 7px 0;
+    text-align: right;
+    text-transform: uppercase;
+}

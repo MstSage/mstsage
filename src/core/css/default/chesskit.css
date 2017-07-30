@@ -1,0 +1,400 @@
+/*ChessKit styles*/
+#LB_Row{margin-bottom:0;}
+.bishop, .pawn33, .pawn44 {width:0px;height:0px; display: none;} /* custom ad-served content */
+.side-by-side > .chess {
+    display: inline-block;
+    float: left;
+}
+.side-by-side .chess + .chess {
+    margin-left: 24px;
+}
+
+.chess-container.mobile-article {
+    background-color: #000;
+    padding-bottom: 0px;
+    margin-bottom: -20px;
+    border: none;
+}
+
+.chess-container.mobile-wiki {
+    background-color: #000;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+.not-left, .sometimes-left {
+    left: auto;
+}
+
+@media(max-width: 320px) {
+    .sometimes-left {
+        left: -15px;
+    }
+}
+/* Stitial V2 Start */
+
+#stitialv2 {
+    display: none;
+}
+
+#stitialv2 .close {
+    display:block;
+    width:45px;
+    height:45px;
+    border-radius:66px;
+    font-size:25px;
+    color:#fff;
+    line-height:41px;
+    text-align:center;
+    text-decoration:none;
+    background:#000;
+    opacity:1;
+    font-weight:bold;
+    border-width:3px;
+    border-style:solid;
+    border-color: #424242;
+    position: fixed;
+    right: 30px;
+    top: 110px;
+    cursor: pointer;
+    z-index: 50020;
+}
+
+#stitialv2 .close:hover {
+    color:#000;
+    text-decoration:none;
+    background:#fff;
+    border-color: #fff;
+}
+
+#stitialv2 .navigation-block {
+    width: 100%;
+    height: 75px;
+    background-color: #000;
+    margin-top: 0;
+    position: fixed;
+    left: 0;
+    top: 0px;
+    z-index: 50010;
+    margin-top: 0;
+    cursor: pointer;
+}
+
+#stitialv2 .header {
+    width: 972px;
+    margin: 0 auto;
+    height: 74px;
+    position: relative;
+    z-index: 1000;
+    line-height: 74px;
+}
+
+/* MstSage Logo */
+#stitialv2 .header .logo-link {
+    background: url(../../img/widgets/global/page/header/global-header-sprite.png) #d3222a 15px -104px no-repeat;
+    cursor: pointer;
+    float: left;
+    font-size: 37px;
+    height: 32px;
+    margin-top: 30px;
+    width: 132px;
+}
+#stitialv2 .header .logo {
+    background: #d3222a;
+    float: left;
+    height: 74px;
+    position: relative;
+    width: 132px;
+}
+
+#stitialv2 .welcome-link {
+    color: #A9A9A9;
+    text-decoration:none;
+    height: 19px;
+    width: 100%;
+    position: relative;
+    margin-left: 15px;
+    top: 15px;
+}
+
+#stitialv2 .welcome-wrapper:hover .welcome-link {
+    color: #fff;
+}
+
+#stitialv2 .welcome-link:hover {
+    text-decoration:none;
+}
+
+#stitialv2 .header img {
+    position: absolute;
+    width: 20px;
+    background-color: #424242;
+    line-height: 36px;
+    margin: 8px 0px 0px 5px;
+    top: 35px;
+}
+
+#stitialv2 .header .welcome-wrapper:hover img {
+    background-color: #d3222a;
+}
+
+#stitialv2 .fuse {
+    width: 100%;
+    height: 5px;
+    background-color: #424242;
+    margin-top: 0;
+    position: fixed;
+    left: 0;
+    top: 75px;
+    z-index: 50020;
+}
+
+#stitialv2 .fuse-wire {
+    width: 0%;
+    height: 5px;
+    background-color: #d3222a;
+    margin-top: 0;
+    position: fixed;
+    left: 0;
+    z-index: 50030;
+}
+
+#stitialv2 .overlay {
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    margin: 0px;
+    padding: 0px;
+    left: 0px;
+    right: 0px;
+    top: 80px;
+    bottom: 0px;
+    width: 100%;
+    height: 10000px;
+    z-index: 1000000;
+    opacity: 0.9;
+    display: block;
+}
+
+#stitialv2 .wrapper {
+    font-size: 14px;
+    opacity: 0.9;
+    z-index: 1000010;
+    position: fixed;
+    width: 100%;
+    left: 0px;
+    text-align: center;
+    top: 155px;
+}
+
+#stitialv2 .creative {
+    margin: 0px auto;
+    position: relative;
+}
+
+.iframe-stitial-container {
+    position: fixed;
+    width: 100%;
+    z-index: 1000030;
+    left:0px;
+    text-align: center;
+    top: 150px;
+}
+
+.iframe-stitial-ad {
+    border: 0px;
+    margin: 0px auto;
+    position: relative;
+}
+/* Stitial V2 End */
+
+/* Watch read Start */
+.fixed-skin {
+    background-position : center 0px !important;
+    background-attachment : fixed !important;
+}
+/* Watch read End */
+.all-leaderboard-skin {
+    background-repeat: no-repeat !important;
+}
+
+.lb-gheader-skin {
+    background-position: center 0px !important;
+    background-attachment: fixed !important;
+}
+
+.gheader-not-scrolled {
+    background-position: center 114px !important;
+    background-attachment: scroll;
+}
+
+.gheader-scroll {
+    background-position: center 40px !important;
+    background-attachment: fixed !important;
+}
+
+.chess {
+    margin: 0 auto;
+}
+
+#king {
+    padding: 12px 0;
+}
+
+.king, .rook {
+    width: 100%;
+}
+
+.king div[id^='google_ads_iframe'],
+.king div[id^='google_ads_iframe'] > *:first-child,
+.rook div[id^='google_ads_iframe'],
+.rook div[id^='google_ads_iframe'] > *:first-child,
+.rook div[id^='google_ads_iframe'] > *:first-child > *:first-child {
+    display: block !important;
+    margin: 0 auto;
+}
+
+.rook, .pawn31 {
+    margin: 12px auto;
+}
+
+.pawn31 {
+    width: 300px;
+}
+
+.king {
+    margin: 0 auto;
+}
+
+.queen, .knight, .falconer, .pawn32 {
+    width: 300px;
+    min-height: 250px;
+    margin: 12px auto;
+}
+
+.viewport-image-wrapper.falconer {
+    margin: 0 auto;
+}
+
+.queen.has-ad {
+    margin: 0;
+}
+
+#queen.mvp > .queen {
+    margin: 12px auto;
+}
+
+#queen.mvp {
+    box-sizing: border-box;
+    color: #3d3d3d;
+    font-size: 10px;
+    font-weight: 200;
+    margin-bottom: 10px;
+    width: 300px;
+    left: 15px;
+    float: left;
+    position: relative;
+}
+
+#queen.mob-article {
+    width: 300px;
+    margin: 12px auto;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    color: #999;
+    text-transform: uppercase;
+    font-size: 10px;
+    padding-bottom: 10px;
+}
+
+.chess span.container-label {
+    font-size: 10px;
+    padding-left: 10px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+#queen.mob-article .queen {
+    margin: 0;
+}
+
+#queen .iceberg-mobile {
+    margin: 12px auto;
+}
+
+/* Promoted Content styles - mss namespace means mobile sponsored story*/
+
+#sponsored-story.mss {
+    background: #e3e3e3;
+}
+
+#sponsored-story.mss div.promoted-headline {
+    color: #6E707D;
+    font-family: ff-din-round-web-pro, sans-serif;
+    font-size: 10px;
+    position: absolute;
+    top: 9px;
+}
+
+#sponsored-story.mss .tooltip {
+    float: right;
+    padding: 8px;
+    position: absolute;
+}
+
+.mss svg.arrow {
+    fill: rgb(227, 227, 227);
+    background-color: rgb(110, 112, 125);
+}
+
+.mss svg.tooltip {
+    fill: rgb(110, 112, 125);
+}
+
+.mss #tooltip-text {
+    position: absolute;
+    font-size: 8px;
+    font-family: "ars-maquette-web",sans-serif;
+    top: 33px;
+    line-height: 9px;
+    padding: 7px 7px 0px 7px;
+    background: #F3F3F3;
+    left: -15px;
+    height: 40px;
+    width: 130px;
+    overflow: hidden;
+    border: solid;
+    border-color: lightgray;
+    border-width: thin;
+    border-radius: 4px;
+    z-index: 10;
+}
+
+.mss .invisible {
+    display: none;
+}
+
+.mss #tooltip-container {
+    left: calc(100% - 150px);
+    position: relative;
+}
+
+.widget_TrendingContent.promoted ul {
+    margin: 0px;
+    padding-left: 0px;
+}
+
+.widget_TrendingContent.promoted .subHeaderContainer span {
+    padding: 0px 0px;
+}
+
+.widget_TrendingContent.promoted .subHeaderContainer span h2 {
+    padding: 0px 6px;
+}
+
+.image-gallery-falconer-medrec.caption-view {
+    position: fixed;
+    right: 20px;
+    bottom: 8px;
+    z-index: 5002;
+}

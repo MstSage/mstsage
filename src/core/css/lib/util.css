@@ -1,0 +1,196 @@
+/* Utils
+========================================================================== */
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: ' '; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.hidden {
+    display: none!important;
+}
+
+.hidden-visibility {
+    visibility: hidden!important;
+}
+
+.hidden-opacity {
+    opacity: 0!important;
+}
+
+.multiline-ellipse {
+    overflow: hidden;
+}
+
+.multiline-ellipse:before {
+    content: "";
+    float: left;
+    height: 100%;
+    width: 5px;
+}
+
+.multiline-ellipse > *:first-child {
+    float: right;
+    margin-left: -5px;
+    width: 100%;
+}
+
+.multiline-ellipse:after {
+    background: -moz-linear-gradient(to right, rgba(255, 255, 255, 0), white 50%, white);
+    background: -ms-linear-gradient(to right, rgba(255, 255, 255, 0), white 50%, white);
+    background: -o-linear-gradient(to right, rgba(255, 255, 255, 0), white 50%, white);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(white), color-stop(50%, white));
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white 50%, white);
+    box-sizing: content-box; 
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+    content: "\02026";
+    float: right;
+    left: 100%;
+    margin-left: -3em;
+    padding-right: 5px;
+    position: relative;
+    text-align: right;
+    top: -25px;
+    width: 3em;
+}
+
+/* Element with this class needs:
+ * to be block element
+ * to have a line-height set
+ * to have a defined height or max-height
+ * adopted from http://hackingui.com/front-end/a-pure-css-solution-for-multiline-text-truncation/
+ */
+.multiline-ellipses {
+  /* hide text if it more than N lines  */
+  overflow: hidden;
+  /* for set '...' in absolute position */
+  position: relative; 
+  /* fix problem when last visible word doesn't adjoin right side  */
+  text-align: justify;  
+  /* place for '...' */
+  margin-right: -1em;
+  padding-right: 1em;
+}
+
+/* create the ... */
+.multiline-ellipses::before {
+  /* points in the end */
+  content: '...';
+  /* absolute position */
+  position: absolute;
+  /* set position to right bottom corner of block */
+  right: 0;
+  bottom: 0;
+}
+
+/* hide ... if we have text, which is less than or equal to max lines */
+.multiline-ellipses::after {
+  /* points in the end */
+  content: '';
+  /* absolute position */
+  position: absolute;
+  /* set position to right bottom corner of text */
+  right: 0;
+  bottom: 0;
+  /* set width and height */
+  width: 1em;
+  height: 1em;
+  margin-top: 0.2em;
+  /* bg color = bg color under block */
+  background: #fff;
+}
+
+.center-parent {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.vertical-center {
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.horizontal-center {
+    position: relative;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.both-center {
+    left: 50%;
+    position: relative;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+/* Generic red video play button */
+.video-play {
+    height: 4em;
+    width: 4em;
+    background-color: #d3222a;
+    border-radius: 50%;
+}
+
+.video-play:after {
+    content: '';
+    width: 0;
+    height: 0;
+    top: 1em;
+    left: 1.4em;
+    border-top: 1em solid transparent;
+    border-bottom: 1em solid transparent;
+    border-left: 1.73em solid white;
+    position: absolute;
+}
+
+.super-position {
+    bottom: -9999px;
+    left: -9999px;
+    margin: auto;
+    position: absolute;
+    right: -9999px;
+    top: -9999px;
+}
+
+.no-scroll {
+    overflow-y: hidden!important;
+    position: fixed!important;
+}
+
+/*
+ * Hide ad containers if user is Prime and has ads disabled
+ */
+html.no-ads .chess-container,     /* generic */
+html.no-ads .feed-chess-container /* blogrolls and feeds */
+{
+    height: 0;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}

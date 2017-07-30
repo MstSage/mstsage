@@ -1,0 +1,147 @@
+/*
+Colors:
+red        : #d3222a
+white-gray : #e7e6e6
+light gray : #b7b7b7
+dark gray  : #252627
+*/
+
+/* Global Spine */
+#spine-container.horizontal {
+    height: 74px;
+}
+
+#spine-container.horizontal:after {
+    bottom: 40px;
+}
+
+#spine-container.horizontal .title {
+    color: #252627;
+    font-family: 'ars-maquette-web', sans-serif;
+    font-size: 12px;
+    margin: 0;
+    padding: 0px 12px 0px 17px;
+    width: 111px;
+}
+
+#spine-container.horizontal .label {
+    color: #bf1313;
+    font-family: 'ff-din-round-web-pro', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 11px;
+    margin: 0;
+    overflow: hidden;
+    padding: 20px 12px 0px 17px;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    white-space: nowrap;
+    width: 111px;
+}
+
+/* Shared tile classes */
+#spine-container.horizontal .queue-item {
+    float: left;
+    overflow: hidden;
+}
+
+#spine-container.horizontal .tile {
+    float: left;
+    height: 74px;
+    line-height: 16px;
+    position: relative;
+    width: 140px;
+}
+
+#spine-container.horizontal .tile .image {
+    height: 100%;
+    width: 100%;
+}
+
+/* Title/label style overrides */
+#spine-container.horizontal .promoted .label {
+    color: #b7b7b7;
+}
+
+#spine-container.horizontal .promoted .title {
+    display: -webkit-box;
+    max-height: 32px;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+#spine-container.horizontal .trending.has-label .title {
+    max-height: 32px;
+    overflow: hidden;
+    padding-top: 0px;
+}
+
+#spine-container.horizontal .trending .title {
+    padding-top: 17px;
+    overflow: hidden;
+    max-height: 50px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+/* Hover states for Spine links/tiles */
+#spine-container.horizontal .cover-card:hover .title,
+#spine-container.horizontal .trending.tile.content:hover .title,
+#spine-container.horizontal .promoted:hover .content .title {
+    color: #bf1313;
+}
+
+#spine-container.horizontal .cover-card:hover .label {
+    color: #b7b7b7;
+}
+
+#spine-container.horizontal .cover-card:hover .image-tile .image,
+#spine-container.horizontal .promoted:hover .image-tile .image {
+    -moz-filter: brightness(95%);
+    -ms-filter: brightness(95%);
+    -webkit-filter: brightness(95%);
+}
+
+#spine-container.horizontal .cover-card:hover .tile.content:after,
+#spine-container.horizontal .trending.tile.content:hover:after,
+#spine-container.horizontal .promoted:hover .tile.content:after {
+    background-color: #bf1313;
+    content: " ";
+    display: block;
+    height: 6px;
+    left: 18px;
+    position: absolute;
+    top: 0;
+    width: 103px;
+}
+
+/* Cover Card styles */
+#spine-container.horizontal .cover-card .image-tile {
+    box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+    margin-right: 2px;
+    width: 138px;
+}
+
+/* Promoted styles */
+#spine-container.horizontal .promoted .image-tile {
+    box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+    position: relative;
+    width: 139px;
+}
+
+#spine-container.horizontal .promoted .image-tile .promo-heading {
+    display: none;
+}
+
+/* Trending styles */
+#spine-container.horizontal .trending .title:after {
+    background-color: #e7e6e6;
+    bottom: 1px;
+    content: " ";
+    height: 50px;
+    left: 0;
+    position: absolute;
+    width: 1px;
+}

@@ -1,0 +1,23 @@
+/*
+any css that can be used to all poilib items
+this is items pull from core/css/lib/base or grid or reset.css
+*/
+.listElmnt-blogItem h3,
+.gameListItem h3 {
+    margin:0px;
+}
+a.moreLink {
+    white-space: nowrap;
+}
+.listElmnt-storyHeadline {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.listElmnt-date {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: normal;
+    color: #686868;
+    float: left;
+}
