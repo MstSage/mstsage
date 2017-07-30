@@ -1,4 +1,5 @@
 === MstSage Entertainment Theme ===
+
 Contributors: Rane MstSage
 Donate link: https://www.mstsage.com
 Requires at least: 4.4
